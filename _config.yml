@@ -39,12 +39,12 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  email: "turkeedurkee@gmail.com"
+#  facebook: deanattali
+#  github: daattali
+  twitter: turkeedurk
+#  patreon: DeanAttali
+  youtube: c/TurkeeDurkee
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -55,7 +55,7 @@ social-network-links:
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
-#  twitch: yourname
+  twitch: TurkeeDurkee
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
@@ -96,11 +96,11 @@ feed_show_tags: true
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
+navbar-col: "#D97031"
 navbar-text-col: "#404040"
 navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
+page-col: "#404040"
+text-col: "#FFFFFF"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#EAEAEA"
