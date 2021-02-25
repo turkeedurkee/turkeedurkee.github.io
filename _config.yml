@@ -5,9 +5,6 @@
 
 # --- Required options --- #
 
-# Favicon
-favicon: "./favicon.ico"
-
 # Name of website
 title: Ben Durkee
 
