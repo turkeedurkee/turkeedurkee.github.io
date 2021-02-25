@@ -47,11 +47,11 @@ social-network-links:
   youtube: c/TurkeeDurkee
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: benjamindurkee
+  linkedin: benjamindurkee
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
-#  instagram: deanat78
+  instagram: turkeedurk
 #  spotify: yourname
 #  telephone: +14159998888
 #  steam: deanat78
@@ -101,7 +101,7 @@ navbar-text-col: "#404040"
 navbar-border-col: "#000000"
 page-col: "#404040"
 text-col: "#EDEDED"
-link-col: "#CBCBCB"
+link-col: "#D97031"
 hover-col: "#A9A9A9"
 footer-col: "#D97031"
 footer-text-col: "#404040"
