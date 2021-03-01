@@ -4,7 +4,7 @@ title: About me
 <!--subtitle: Why you'd want to go on a date with me-->
 ---
 
-My name is Ben Durkee. I'm a senior at Purdue University, but I'll be taking a 9th semester, so I am currently seeking an internship. I'm pursuing a concentration in controls and astrodynamics, while doing my best to obtain a comprehensive knowledge of other aerospace disciplines.
+My name is Ben Durkee. I'm a senior at Purdue University, but I'll be taking a 9th semester, so I am currently seeking an internship for the Summer of 2021. I'm pursuing a concentration in controls and astrodynamics, while doing my best to obtain a comprehensive knowledge of other aerospace disciplines too.
 
 Outside of academics:
 
@@ -13,7 +13,7 @@ Outside of academics:
 - I am a student leader of the bass drums of the Purdue "All-American Marching Band" drumline
 - I am the jazz pianist for the Purdue American Music Repertory Ensemble
 - I am a comedy variety streamer on Twitch.tv
-- I create original content and post stream edits on YouTube
+- I create original content and post livestream edits on YouTube
 - I am a student pilot
 - I am Level 1 High Powered Rocketry certified
 - I am SCUBA certified
