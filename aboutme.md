@@ -10,13 +10,13 @@ Outside of academics:
 
 - I am the Design Lead of Purdue Orbital's Commercial Rocket team
 - I am working on a coring drill bit and stabilizing jig for use on the NASA Artemis Project moon missions
+- I am a student pilot
+- I am Level 1 High Powered Rocketry certified
+- I am SCUBA certified
 - I am a student leader of the bass drums of the Purdue "All-American Marching Band" drumline
 - I am the jazz pianist for the Purdue American Music Repertory Ensemble
 - I am a comedy variety streamer on Twitch.tv
 - I create original content and post livestream edits on YouTube
-- I am a student pilot
-- I am Level 1 High Powered Rocketry certified
-- I am SCUBA certified
 - I love rock climbing and am belay certified
 - I occasionally surf (though there aren't many opportunities when you are landlocked in Indiana)
 - I once ate a Chipotle burrito without spilling a single crumb
