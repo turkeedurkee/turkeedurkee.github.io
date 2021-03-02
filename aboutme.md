@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-<!--subtitle: Why you'd want to go on a date with me-->
+subtitle:
 ---
 
 My name is Ben Durkee. I'm a senior at Purdue University and I'll be graduating in December of 2021. I am currently seeking an internship for the Summer of 2021. I'm pursuing a concentration in controls and astrodynamics, while doing my best to obtain a comprehensive knowledge of other aerospace disciplines too.
