@@ -17,7 +17,7 @@ Outside of academics:
 - I am the jazz pianist for the Purdue American Music Repertory Ensemble
 - I am a comedy variety streamer and have cultivated a tight-knit community on Twitch.tv
 - I create original content and post livestream edits on YouTube
-- I am a 4th Degree Black Belt in Tae Kwon Do
+- I have a 4th Degree Black Belt in Tae Kwon Do
 - I love rock climbing and am belay certified
 - I occasionally surf (though there aren't many opportunities when you are landlocked in Indiana)
 - I once ate a Chipotle burrito without spilling a single crumb
