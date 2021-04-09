@@ -24,10 +24,12 @@ Outside of academics:
 
 <!-- TRAILER -->
 
+<!--
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/p4Nuhg8EPUQ" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 <text-align: middle>
 </iframe></p>
+-->
 
 <!--What else do you need?-->
 
