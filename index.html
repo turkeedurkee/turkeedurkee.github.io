@@ -1,339 +1,60 @@
-<!DOCTYPE html>
+---
+layout: home
+title: Ben Durkee
+<!--subtitle: So you've stumbled onto my little corner of the internet-->
+---
+<!-- TRAILER -->
+<!--
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/p4Nuhg8EPUQ" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<text-align: middle>
+  </iframe></p>
+-->
+<!-- Body Text -->
+
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.4">
-    <title>TurkeeDurkee</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-    <style>
-    body {
-	background-color: #28168D
-	}
-    table.clear {
-		border:0px solid RGB(0,0,0,1);
-    margin-left:auto; 
-    margin-right:auto;
-    background-color: RGB(0,0,0,0);
-     }
-    .invert:hover{
-      filter: invert(100%);
-    }
-    .shitfuck {
-    	transition: transform .05s ease-in-out;
-    }
-    .shitfuck:hover {
-	transform: rotate(3deg);
-	filter: brightness(110%) blur(1.5px);
-    }
-    .middleshitfuck:hover{
-      filter: brightness(90%) blur(1px);
-    }
-    .invert:hover{
-      filter: invert(100%);
-    }
-    .middleinvert:hover{
-      filter: invert(100%);
-    }
-    img.middle{
-    display: block;
-    margin-left:auto; 
-    margin-right:auto;
-    }
-    img.middleinvert{
-    display: block;
-    margin-left:auto; 
-    margin-right:auto;
-    }
-    img.middleshitfuck{
-    display: block;
-    margin-left:auto; 
-    margin-right:auto;
-    }
-    p {
-    text-align: center; color:#000000;
-    }
-    h4 {
-    text-align: center; color:black;
-    }
-    
-    
-    
-    * {
-	margin:0;
-	padding:0
-}/* for demo only - use a proper reset of your own*/
-body { padding:20px 10px }
-a img {
-	display:block;
-	border:none;
-}
-.outer {
-	width:480px;
-	height:50px;
-	margin:auto;
-	border:0px solid #000;
-	position:relative;/* stacking context*/
-}
-.image-holder {
-	float:right;
-	margin:6px 10px 10px 0;
-	width:400px;
-	height:200px;
-	border:0px solid #000;
-	padding:1px;
-	position:relative;
-	z-index:1;
-	display:block;
-}
-ul.links {
-	list-style:none;
-}
-.links li {
-}
-.links li a {
-	display:block;
-	width:90px;
-	padding:2px;
-	text-decoration:none;
-}
-.links li a span, .links li a b { /*dont touch these*/
-	position:absolute;
-	right:24px;
-	top:-999em;
-	width:300px;
-	height:300px;
-	z-index:2;
-}
-.links li a span img {
-	display:block;
-	margin:0 0 5px
-}
-.links li a:hover, .links li.over a {
-	visibility:visible;
-}
-.links li a:hover span, .links li.over a span {top:-77px; left:-440px;}/*second tv position*/
-.links li a:hover b, .links li.over a b {
-	top:500px;
-	left:0px;
-	height:auto;
-}
-
-	<!--TESTING!!!!!!!!!!!-->
-	    
-	    .links li c {
-	display:block;
-	width:90px;
-	padding:2px;
-	text-decoration:none;
-}
-.links li c span, .links li c d { /*dont touch these*/
-	position:absolute;
-	right:24px;
-	top:-999em;
-	width:300px;
-	height:300px;
-	z-index:2;
-}
-.links li c span img {
-	display:block;
-	margin:0 0 5px
-}
-.links li c:hover, .links li.over c {
-	visibility:visible;
-}
-.links li c:hover span, .links li.over c span {top:-77px; left:440px;}/*second tv position*/
-.links li c:hover d, .links li.over c d {
-	top:500px;
-	left:0px;
-	height:auto;
-}
-    
-	<!--ENDTEST!!!!!-->
-
-	    
-    </style>
-    
-    
-    <script type="text/javascript">
-    var imageURLs = [
-         
-    "https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-       , "https://twelvemen.neocities.org/2/mainv.png"
-       , "https://twelvemen.neocities.org/2/mainvgaypastel.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-        ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-       , "https://twelvemen.neocities.org/2/mainvcustom.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvlean.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvcyber.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvparonpa.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-       , "https://twelvemen.neocities.org/2/mainvgaypastel.png"
-       , "https://twelvemen.neocities.org/2/mainvgaypastel.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-       , "https://twelvemen.neocities.org/2/mainvgaypastel.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvlangu.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv100000.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvSQUIDGAMES!!!!.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainvbarcode2scan.png"
-         ,"https://twelvemen.neocities.org/2/mainvbarcode2scan.png"
-         ,"https://twelvemen.neocities.org/2/mainvrockmetalhellyeahalsokindagreeklike.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/scribbledpencilmainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-         ,"https://twelvemen.neocities.org/2/mainv.png"
-    ];
-	    
-    // hey if you ever see this part of code i just wanna say sorry
-    function getImageTag() {
-      var img = '<img src=\"';
-      var randomIndex = Math.floor(Math.random() * imageURLs.length);
-      img += imageURLs[randomIndex];
-      img += '\"  alt=\"Welcome\"  style="padding:5px" class="middle"  width="700px" />';
-      return img;
-    }
-  </script>
-  
-  
-  <!--
-  for phones 
-  
-  
-  <script>
-    
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|OperaMini/i.test(navigator.userAgent) ) {
-      window.location.replace("https://12men.neocities.org/");
-    } 
-  
-  </script>
-  -->
-  
-    
-  </head>
   <body>
-  <img src="https://twelvemen.neocities.org/2/gaeboyteenrate.png" style="position:fixed; height:85px; right:6px; bottom:5px;" >
-  <!--<img src="https://twelvemen.neocities.org/wallpapers/jack-o-lantern.gif" style="position:fixed; height:104px; right:6px; bottom:5px;" >-->
-  <table class="clear" width=1000px><tr><td>
-  
-  <!--<img src="https://twelvemen.neocities.org/cons.gif">
-  <img style="padding:5px" class="middle" src="https://twelvemen.neocities.org/2/mainv.png" height="180px">-->
-        <script type="text/javascript">
-        document.write(getImageTag());
-        </script>
+    <!--<h1>This is h1.</h1>
+    <h2>This is h2.</h2>
+    <h3>This is h3.</h3>
+    <h4>This is h4.</h4>
+    <h5>This is h5.</h5>
+    <h6>This is h6.</h6>-->
+    
+    <!--PROFESSIONAL-->
+    <p>
+    <!--<h2>If you're looking for a hardworking employee:</h2>-->
+    <h4>Purdue University Class of 2021.</br></br>
+    
+    B.S. in Aeronautical and Astronautical Engineering, with a concentration in Aerospace Design and a minor in Organizational Leadership.</br></br>
+    
+    Please click any of the links below to learn more about my experiences and accomplishments!</h4>
 
-  
-  <table class="clear" width=998px><tr>
-	  <!--testing-->
-	  <td>   
-    <div class="outer">
-    		<ul id="over" class="links">
-    				<li><c href="https://twelvemen.neocities.org/2/photo.html"><img class="invert" src="https://twelvemen.neocities.org/2/galv.png" height="80px"><d></d><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggspurp.png" width="400" alt="gallery" /></span></c></li>
-    				<li><c href="https://twelvemen.neocities.org/2/recc.html"><img class="invert" src="https://twelvemen.neocities.org/2/tufv.png" height="80px"><d></d><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggsorag.png" width="400" alt="stuff" /></span></c></li>
-    				<li><c href="https://twelvemen.neocities.org/2/about.html"><img class="invert" src="https://twelvemen.neocities.org/2/boutv.png" height="80px"><d></d><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggspink.png" width="400"  alt="about" /></span></c></li>
-    				<li><c href="https://twelvemen.neocities.org/2/xtra.html"><img class="invert" src="https://twelvemen.neocities.org/2/xtrav.png" height="80px"><d></d><span><img  class="shitfuck" src="https://twelvemen.neocities.org/2/seggsgreen.png" width="400"  alt="extras" /></span></c></li>
-		</ul>
-    </div>
-  </td>
-	  <!--endtest-->
-	  <td> 
-    <p class="image-holder"><img src="https://twelvemen.neocities.org/2/tv.webp" width="400px" alt="TV static" /></p>
-	  </td>
-	  <td>   
-    <div class="outer">
-	    <ul id="over" class="links">
-    				<li><a href="https://twelvemen.neocities.org/2/photo.html"><img class="invert" src="https://twelvemen.neocities.org/2/galv.png" height="80px"><b></b><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggspurp.png" width="400" alt="gallery" /></span></a></li>
-    				<li><a href="https://twelvemen.neocities.org/2/recc.html"><img class="invert" src="https://twelvemen.neocities.org/2/tufv.png" height="80px"><b></b><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggsorag.png" width="400" alt="stuff" /></span></a></li>
-    				<li><a href="https://twelvemen.neocities.org/2/about.html"><img class="invert" src="https://twelvemen.neocities.org/2/boutv.png" height="80px"><b></b><span><img class="shitfuck" src="https://twelvemen.neocities.org/2/seggspink.png" width="400"  alt="about" /></span></a></li>
-    				<li><a href="https://twelvemen.neocities.org/2/xtra.html"><img class="invert" src="https://twelvemen.neocities.org/2/xtrav.png" height="80px"><b></b><span><img  class="shitfuck" src="https://twelvemen.neocities.org/2/seggsgreen.png" width="400"  alt="extras" /></span></a></li>
-    		</ul>
-    </div>
-  </td>
-  </tr></table>
-  <p style="padding:50px"></p><p style="padding:50px"></p><p style="padding:33px"></p>
-  <img class="middle" src="https://twelvemen.neocities.org/2/ourfuture.png">
-  <!--when not christmas pt. 2/2    <h4 style="black"><i>Welcome to Twelve Men</i></h4>    -->
-  <!--when christmas pt. 2/2    <h4 style="black"><i>Merry Christmas</i></h4>    -->
-  <!-- Remember to replace the titlebar png as well!! -->
-  <h4 style="black"><i>Welcome to Twelve Men</i></h4>
-  <p style="padding:20px"></p>
-  <a href="https://twelvemen.neocities.org/2/updates.html"><img class="middleinvert" src="https://twelvemen.neocities.org/2/logloghg.png" width=150px></a><p>​</p>
-  <p style="padding:20px"></p>
-
-  <script type="text/javascript">
-  <!--//--><![CDATA[//><!--
-  startList = function() {
-  	var sfEls = document.getElementById("over").getElementsByTagName("LI");
-  	for (var i=0; i<sfEls.length; i++) {
-  		sfEls[i].onmouseover=function() {
-  			//first remove all existing classes of .over
-  			for (var j=0; j<sfEls.length; j++){
-  				sfEls[j].className=sfEls[j].className.replace(new RegExp(" over\\b"), "");
-  			}
-  				this.className+=" over";// now add class
-  		}
-  	}
-  }
-  // addLoadEvent 
-  function addLoadEvent(func) {
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function') {
-      window.onload = func;
-    } else {
-      window.onload = function() {
-        if (oldonload) {
-          oldonload();
-        }
-        func();
-      }
-    }
-  }
-  addLoadEvent(startList);
-  </script>
-
-  
-  </td></tr></table>
+    <b><a href="https://turkeedurk.ee/aboutme/">More about me.</a><br/>
+    <a href="https://github.com/turkeedurkee/turkeedurkee.github.io/blob/master/Benjamin_Durkee_Resume.pdf" target="_blank">My resume.</a> <br/>
+    <a href="https://www.linkedin.com/in/benjamindurkee/" target="_blank">My LinkedIn.</a><br/>
+    <a href="https://www.dropbox.com/s/cvhddgaz7a1d6gs/MDRS_Crew218_Journalist_Reports.pdf?dl=0" target="_blank">My reports from Crew 218 aboard the Mars Desert Research Station.</a><br/>
+    <a href="https://www.facebook.com/purduemdrs/" target="_blank">My reports from Crew 236 aboard the Mars Desert Research Station.</a><br/>
+    <a href="https://www.purdueorbital.com/" target="_blank">Purdue Orbital.</a><br/>
+    <!--<a href="https://github.com/turkeedurkee">My github.</a><br/>-->
+    
+    </p>
+    
+    <img src="MDRS_Crew_218.jpg" alt="MDRS Crew 218">
+   
+    <!--CONTENT CREATION-->
+    <!--  
+    <h2>If you're looking for a handsome, red-haired man to sing and dance for your entertainment:</h2>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Here you go.</a> <br/>
+    
+    <h2>If you're still desperate:</h2>
+    <a href="https://www.twitch.tv/TurkeeDurkee">My Twitch.</a> <br/>
+    <a href="https://www.youtube.com/user/TurkeeDurkee">My YouTube.</a> <br/>
+    <a href="https://twitter.com/TurkeeDurk">My Twitter.</a> <br/>
+    <!--<a href="https://discord.gg/3eE44Qx">Our Discord!</a>-->
+    </b> <br/>
+    </p>
   </body>
 </html>
+
+
