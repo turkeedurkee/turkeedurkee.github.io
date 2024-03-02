@@ -272,7 +272,7 @@ ul.links {
   </tr></table>
 -->	  
 
-
+<!--
 	  
 <table class="space" width=998px>
 	<tr id="over" class="links">
@@ -318,6 +318,8 @@ ul.links {
   </tr></table>	  
 </div>
 
+-->
+	  
 	  
 <!--TABLE MODE
 <table class="clear" width=998px>
@@ -379,13 +381,20 @@ ul.links {
   <p style="padding:20px"></p>
   <a href="https://twelvemen.neocities.org/2/updates.html"><img class="middleinvert" src="https://twelvemen.neocities.org/2/logloghg.png" width=150px></a><p>​</p>
   <p style="padding:20px"></p>
+<body onload="myFunction()">
+
+  <h4>"The value for sfEls is: "sfEls" <span id="sfEls"></span></h4>
+	<h4>"The value for i is: "i" <span id="i"></span></h4>
+	<h4>"The value for j is: "j" <span id="j"></span></h4>
+
+</body>
 
 
 	  
   <script type="text/javascript">
   //--><![CDATA[//><!--
 
-/* BAK
+
   startList = function() {
   	var sfEls = document.getElementById("over").getElementsByTagName("LI");
   	for (var i=0; i<sfEls.length; i++) {
@@ -397,8 +406,12 @@ ul.links {
   				this.className+=" over";// now add class
   		}
   	}
-  } */
+	  document.getElementById("sfEls").innerHTML = sfEls;
+	  document.getElementById("i").innerHTML = i;
+	  document.getElementById("j").innerHTML = j;
+  }
 
+/*	  
   startList = function() {
   	var sfEls = document.getElementById("over").getElementsByTagName("TD");
   	for (var i=0; i<sfEls.length; i++) {
@@ -411,7 +424,8 @@ ul.links {
   		}
   	}
   }
-	  
+*/
+   
   // addLoadEvent 
   function addLoadEvent(func) {
     var oldonload = window.onload;
