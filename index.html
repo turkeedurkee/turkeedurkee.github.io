@@ -385,6 +385,8 @@ ul.links {
 
 
   <h4>"The length for sfEls is: "sfEls" <span id="sfEls"></span></h4>
+	  <h4>"sfEls of i is: "blargh" <span id="blargh"></span></h4>
+	  <h4>"sfEls of j is: "skrunk" <span id="skrunk"></span></h4>
 	<h4>"The value for i is: "i" <span id="i"></span></h4>
 	<h4>"The value for j is: "j" <span id="j"></span></h4>
 
@@ -408,6 +410,8 @@ ul.links {
   		}
   	}
 	  document.getElementById("sfEls").innerHTML = sfEls.length;
+	  document.getElementById("blargh").innerHTML = sfEls[i];
+	  document.getElementById("skrunk").innerHTML = sfEls[j];
 	  document.getElementById("i").innerHTML = i;
 	  document.getElementById("j").innerHTML = j;
   }
