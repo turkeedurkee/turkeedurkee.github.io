@@ -380,8 +380,12 @@ ul.links {
   <a href="https://twelvemen.neocities.org/2/updates.html"><img class="middleinvert" src="https://twelvemen.neocities.org/2/logloghg.png" width=150px></a><p>​</p>
   <p style="padding:20px"></p>
 
+
+	  
   <script type="text/javascript">
-  <!--//--><![CDATA[//><!--
+  //--><![CDATA[//><!--
+
+/* BAK
   startList = function() {
   	var sfEls = document.getElementById("over").getElementsByTagName("LI");
   	for (var i=0; i<sfEls.length; i++) {
@@ -393,7 +397,21 @@ ul.links {
   				this.className+=" over";// now add class
   		}
   	}
+  } */
+
+  startList = function() {
+  	var sfEls = document.getElementById("over").getElementsByTagName("TD");
+  	for (var i=0; i<sfEls.length; i++) {
+  		sfEls[i].onmouseover=function() {
+  			//first remove all existing classes of .over
+  			for (var j=0; j<sfEls.length; j++){
+  				sfEls[j].className=sfEls[j].className.replace(new RegExp(" over\\b"), "");
+  			}
+  				this.className+=" over";// now add class
+  		}
+  	}
   }
+	  
   // addLoadEvent 
   function addLoadEvent(func) {
     var oldonload = window.onload;
