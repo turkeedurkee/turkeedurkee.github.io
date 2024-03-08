@@ -389,7 +389,25 @@ ul.links {
   	<!-- Quotes will display here -->
   </div>
 
-  <script src="javascript.js"></script>
+  <script type="text/javascript">
+	  var quote = [
+		  '\"Science compels us to explode the sun!\"',
+		  '\"This song is new to me, but I am honored to be a part of it.\"',
+		  '\"Friendship Drive charging.\"'
+		  ]
+
+	  var speaker = [
+		  '- Pye, <i>Outer Wilds</i>',
+		  '- Solanum, <i>Outer Wilds</i>',
+		  '- Ship Computer, <i>Elite Dangerous</i>'
+		  ]		   
+
+	  function newQuote() {
+		  var randomNumber = Math.floor(Math.random() * (quote.length));
+		  document.getElementById('quoteDisplay').innerHTML = quote[randomNumber];
+		  document.getElementById('speakerDisplay').innerHTML = speaker[randomNumber];
+	  }	  
+  </script>
 
 
 	  
