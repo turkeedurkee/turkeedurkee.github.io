@@ -6,8 +6,12 @@
     <title>TurkeeDurkee</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <style>
+    
+    @font-face { font-family: Atkinson; src: url('Atkinson-Hyperlegible-Regular-102.ttf'); }
+
     body {
-  	  background-color: #28168D
+  	  background-color: #c04399;
+      font-family: Atkinson;
 	  }
 
     table.clear {
@@ -104,7 +108,7 @@
 	    height:100px;
 	    margin-top:-70px;
       margin-bottom:auto;
-      margin-left:auto;
+      margin-left:50px;
       margin-right:auto;
 	    border:0px solid #000;
 	    position:relative;/* stacking context*/
@@ -240,7 +244,7 @@
       var img = '<img src=\"';
       var randomIndex = Math.floor(Math.random() * imageURLs.length);
       img += imageURLs[randomIndex];
-      img += '\"  alt=\"Welcome!\"  style="padding:5px" class="middle"  height="165px" />';
+      img += '\"  alt=\"Welcome!\"  style="padding:5px" class="middle"  height="165px" />'; //Title Card height
       return img;
     }
   </script>
@@ -298,19 +302,30 @@
 
   <p style="padding:50px"></p>
   <p style="padding:50px"></p>
-  <p style="padding:22px"></p>
+  <p style="padding:20px"></p>
 
 
   <h4 style="black; font-size:26px"><div id="quoteDisplay"></div></h4>
   	<!-- Quotes will display here -->
   </div>
-  <p style="padding:3px"></p>
+  <p style="padding:1px"></p>
  <h4 style="black; font-size:20px"><div id="speakerDisplay"></div></h4>
     <!-- Speakers will display here -->
  </div>
 
   <p style="padding:20px"></p>
-  <a href="https://twelvemen.neocities.org/2/updates.html"><img class="middleinvert" src="https://twelvemen.neocities.org/2/logloghg.png" width=150px></a><p>​</p>
+
+  <table class="clear" width=650px><tr>
+	 
+	  <th>
+     <a href="https://twelvemen.neocities.org/2/updates.html"><img class="middleinvert" src="https://twelvemen.neocities.org/2/logloghg.png" width=150px></a>
+    </th>
+
+    <th>
+      <div>Testing testing 123!!!!!</div>
+    </th></tr>
+  </table>
+
   <p style="padding:20px"></p>
 
  <!--END OF DISPLAYED SITE CONTENT-->
@@ -363,15 +378,31 @@
   var quote = [
     '\"Science compels us to explode the sun!\"',
     '\"This song is new to me, but I am honored to be a part of it.\"',
-    '\"Friendship Drive charging.\"',
-	'\"The wind is rising!... We must try to live!\"',
+    // '\"Friendship Drive charging.\"',
+	  '\"The wind is rising!... We must try to live!\"',
+    '\"In dark times, should the stars also go out?\"',
+    // '\"I am a relatively median lifeform, while you are extreme, all-engulfing madness.<br>A volatile simian nervous system, ominously new to the planet.\"',
+    '\"Sunrise, parabellum.\"',
+    '\"Wind: 3 knots. Heading: 274. Range: 95 meters. Projectile mass: 89 kilograms.<br><i>Trust me.</i>\"',
+    '\"A flipped coin doesn\'t always land heads or tails. Sometimes it may never land at all.\"',
+    '\"Despite everything, it\'s still you.\"',
+    '\"Floor ice cream gives you health!\"',
+
     ]
 
   var speaker = [
     '- Pye, <i>Outer Wilds</i>',
     '- Solanum, <i>Outer Wilds</i>',
-    '- Ship Computer, <i>Elite Dangerous</i>',
+    // '- Ship Computer, <i>Elite Dangerous</i>',
 	  '- Paul Valéry, <i>Le Cimetière marin (The Graveyard by the Sea)</i>',
+    '- Unknown communard\'s poem, <i>Disco Elysium</i>',
+    // '- The Insulindian Phasmid, <i>Disco Elysium</i>',
+    '- Lt. Kim Kitsuragi, <i>Disco Elysium</i>',
+    '- BT-7274, <i>Titanfall 2</i>',
+    '- Grimsley, <i>Pokemon Black/White</i>',
+    '- Mirror, <i>Undertale</i>',
+    '- Pit, <i>Kid Icarus: Uprising</i>',
+
     ]		   
 
   function newQuote() {
