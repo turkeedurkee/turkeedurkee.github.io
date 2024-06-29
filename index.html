@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.4">
     <title>TurkeeDurkee</title>
-    <link rel="icon" type="image/x-icon" href="img/icons/porygon.ico">
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     
     
@@ -287,7 +287,7 @@
       <p style="padding:0px"></p>     
       <div class="outer">
     		<ul id="over" class="links">
-    				<li><a href="https://turkeedurk.ee/construction.html"><img class="invert" src="https://turkeedurk.ee/img/Art-Trunic.png" height="95px"><span><img class="superimpose" src="https://turkeedurk.ee/img/DE-Frame-Test.png" width="320" alt="Artwork" /></span></a></li>
+    				<li><a href="art/videos.html"><img class="invert" src="https://turkeedurk.ee/img/Art-Trunic.png" height="95px"><span><img class="superimpose" src="https://turkeedurk.ee/img/DE-Frame-Test.png" width="320" alt="Artwork" /></span></a></li>
     				<li><a href="https://turkeedurk.ee/construction.html"><img class="invert" src="https://turkeedurk.ee/img/Engineering-Trunic.png" height="95px"><span><img class="superimpose" src="https://turkeedurk.ee/img/DE-Frame-Test.png" width="320" alt="Engineering" /></span></a></li>
     				<li><a href="https://turkeedurk.ee/construction.html"><img class="invert" src="https://turkeedurk.ee/img/Extras-Trunic.png" height="95px"><span><img class="superimpose" src="https://turkeedurk.ee/img/DE-Frame-Test.png" width="320" alt="Extras" /></span></a></li>
     				<li><a href="https://turkeedurk.ee/construction.html"><img class="invert" src="https://turkeedurk.ee/img/About-Trunic.png" height="95px"><span><img  class="superimpose" src="https://turkeedurk.ee/img/DE-Frame-Test.png" width="320" alt="About" /></span></a></li>
@@ -307,11 +307,11 @@
   <p style="padding:20px"></p>
 
 
-  <h4 style="black; font-size:26px"><div id="quoteDisplay"></div></h4>
+  <h4 style="color:black; font-size:26px"><div id="quoteDisplay"></div></h4>
   	<!-- Quotes will display here -->
   </div>
   <p style="padding:1px"></p>
- <h4 style="black; font-size:20px"><div id="speakerDisplay"></div></h4>
+ <h4 style="color:black; font-size:20px"><div id="speakerDisplay"></div></h4>
     <!-- Speakers will display here -->
  </div>
 
@@ -374,7 +374,7 @@
     }
   }
   addLoadEvent(startList);
-  </script>
+</script>
 
 <script type="text/javascript">
   var quote = [
@@ -410,11 +410,11 @@
   function newQuote() {
     var randomNumber = Math.floor(Math.random() * (quote.length));
     const quoted = document.getElementById('quoteDisplay');
-    console.log('', quoted);
+    // console.log('', quoted);
     document.getElementById('quoteDisplay').innerHTML = quote[randomNumber];
     document.getElementById('speakerDisplay').innerHTML = speaker[randomNumber];
-    console.log(quote[randomNumber]);
-    console.log(speaker[randomNumber]);
+    // console.log(quote[randomNumber]);
+    // console.log(speaker[randomNumber]);
   }	  
   newQuote();
 </script>
