@@ -1,5 +1,26 @@
-@font-face { font-family: Atkinson; 
-  src: url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf"); 
+/* @font-face { 
+  font-family: Atkinson; 
+  src: url("./fonts/Atkinson-Hyperlegible-Regular-102.ttf"); 
+} */
+
+@font-face
+{
+    font-family: 'Atkinson'; font-weight: normal; font-style: normal; font-stretch: normal; src: url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf'); font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Atkinson'; font-weight: normal; font-style: italic; font-stretch: normal; src: url('./fonts/Atkinson-Hyperlegible-Italic-102.ttf'); font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Atkinson'; font-weight: bold; font-style: normal; font-stretch: normal; src: url('./fonts/Atkinson-Hyperlegible-Bold-102.ttf'); font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'Atkinson'; font-weight: bold; font-style: italic; font-stretch: normal; src: url('./fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf'); font-display: swap;
 }
 
 body {
