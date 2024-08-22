@@ -3917,7 +3917,7 @@ footer
 }
 
 .timeline_component{
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 50px 20px;
 }
 
 .timeline_component-box{
@@ -3935,7 +3935,7 @@ footer
 
 .timeline_middle{
     position: relative;
-    top: 1.5%;
+    top: 0%;
     border: none;
     border-left: 2px dotted #ddd;
 }
@@ -3949,6 +3949,44 @@ footer
     height: 15px;
     background: #ddd;
     border-radius: 50%;
+}
+
+.timeline_point-bottom{
+    top: initial;
+    bottom: 0;
+}
+
+.timeline_img{
+    padding: 10px;
+    display:block;
+    height: 130px;
+    border: 1px solid #aaa; 
+    box-shadow: 2px 2px #ddd;
+}
+
+.timeline_img-right{
+    margin-left:auto;
+    margin-right: 0;
+}
+
+/* .timeline_title{
+
+} */
+
+.timeline_job{
+    font-style: italic;
+    border: none;
+    border-bottom: 2px dotted #ddd;
+}
+
+/* .timeline_paragraph{
+    margin-bottom: 0px;
+} */
+
+.timeline_link{
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: 0px;
 }
 
 @media screen and (min-width: 436px)
