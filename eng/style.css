@@ -3921,7 +3921,6 @@ footer
 }
 
 .timeline_component-box{
-    top: 5%;
     /* margin-top: 5px; */
     padding: 1em;
     display: block; 
@@ -3936,7 +3935,7 @@ footer
 
 .timeline_middle{
     position: relative;
-    top: 2%;
+    top: 1.5%;
     border: none;
     border-left: 2px dotted #ddd;
 }
