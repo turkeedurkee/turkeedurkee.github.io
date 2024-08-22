@@ -3663,7 +3663,7 @@ p.preamble
 
 .navbar-logo-img
 {
-    height: 2.75rem; padding-top: 1.4375rem; padding-right: 2rem; padding-bottom: .5rem;
+    height: 2.85rem; padding-top: 1.4375rem; padding-right: 2rem; padding-bottom: .5rem; border: none;
 }
 
 .navbar-logomark
@@ -3906,6 +3906,50 @@ footer
 .full-height
 {
     height: 100%;
+}
+
+.timeline{
+    margin: 0 auto;
+    /* max-width: 750px; */
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+}
+
+.timeline_component{
+    margin: 0px 20px 20px 20px;
+}
+
+.timeline_component-box{
+    top: 5%;
+    /* margin-top: 5px; */
+    padding: 1em;
+    display: block; 
+    height: auto; 
+    border: 1px solid #aaa; 
+    box-shadow: 2px 2px #ddd;
+}
+
+.timeline_date-right{
+    text-align: right;
+}
+
+.timeline_middle{
+    position: relative;
+    top: 2%;
+    border: none;
+    border-left: 2px dotted #ddd;
+}
+
+.timeline_point{
+    position: absolute;
+    /* top: 6%; */
+    left: 0;
+    transform: translateX(-56%);
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 436px)
