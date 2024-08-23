@@ -4004,6 +4004,11 @@ footer
     margin-right: 0px;
 }
 
+.pdf{
+    width: 100%;
+    /* aspect-ratio: 4 / 3; */
+}
+
 @media screen and (min-width: 436px)
 {
     .measure-ns
