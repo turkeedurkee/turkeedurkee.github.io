@@ -3929,6 +3929,10 @@ footer
     box-shadow: 2px 2px #ddd;
 }
 
+.timeline_component-bottom{
+  margin-bottom: 25px;  
+}
+
 .timeline_date-right{
     text-align: right;
 }
@@ -3959,7 +3963,7 @@ footer
 .timeline_img{
     padding: 10px;
     display:block;
-    height: 130px;
+    height: 135px;
     border: 1px solid #aaa; 
     box-shadow: 2px 2px #ddd;
 }
