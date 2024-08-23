@@ -3933,6 +3933,10 @@ footer
   margin-bottom: 25px;  
 }
 
+.timeline_component-box-bottom{
+    margin-bottom: auto;
+}
+
 .timeline_date-right{
     text-align: right;
 }
@@ -3958,6 +3962,8 @@ footer
 .timeline_point-bottom{
     top: initial;
     bottom: 0;
+    width: 10px;
+    height: 10px;
 }
 
 .timeline_img{
@@ -3971,6 +3977,11 @@ footer
 .timeline_img-right{
     margin-left:auto;
     margin-right: 0;
+}
+
+.timeline_img-tkd{
+    height: auto;
+    width: 135px;
 }
 
 /* .timeline_title{
