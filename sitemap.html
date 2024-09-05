@@ -87,10 +87,20 @@
         margin-right: 10px; */
     }
 
-    .link a:hover{
-        background-color: #fee000;
-        visibility: hidden;
+    .blocks {
+        display: none;
+        margin-top: -16px;
+        /* font-size: 1.25em; */
     }
+    
+    .link a:hover + .blocks {
+        display: block;
+        color: #fee000;
+    }
+
+    /* .link a:hover{
+        background-color: #fee000;
+    } */
 
     @media screen and (min-width: 1200px) {
         body {
@@ -135,7 +145,10 @@
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">ARTWORK</p>
-                        <p class="element link">├── <a class="link" href="https://turkeedurk.ee/art/videos">videos</a></p>
+                        <p class="element link">├── <a class="link" href="https://turkeedurk.ee/art/videos">videos</a>
+                            <div class="blocks">&nbsp;&nbsp;&nbsp;&nbsp;██████</div>
+                        </p>
+                        
                         <p class="element">├── music</p>
                         <p class="element">├── photos</p>
                         <p class="element">└── recipes</p>
