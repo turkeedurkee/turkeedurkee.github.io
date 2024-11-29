@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     
+    <title>Sitemap | TurkeeDurkee</title>
     
     <style>
     
@@ -93,10 +94,17 @@
         /* font-size: 1.25em; */
     }
     
-    /* .link a:hover + .blocks {
-        display: block;
-        color: #fee000;
-    } */
+    .you-are-here-hover{
+        opacity: 1;
+    }
+
+    .you-are-here{
+        opacity: 0;
+    }
+
+    .you-are-here-hover:hover ~ .you-are-here {
+        opacity: 1;
+    }
 
     a.blocks.link:hover{
         background-color: #fee000;
@@ -153,7 +161,10 @@
             <h5><a href="https://turkeedurk.ee">&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║██╔══██╗██╔═██╗ ██╔══╝&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██╔══██╗██╔═██╗ ██╔══╝&nbsp;&nbsp;██╔══╝  </a></h5>
             <h5><a href="https://turkeedurk.ee">&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;╚██████╔╝██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██╗███████╗███████╗██████╔╝╚██████╔╝██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██╗███████╗███████╗</a></h5>
             <h5><a href="https://turkeedurk.ee">&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;╚═════╝ ╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚══════╝╚══════╝╚═════╝&nbsp;&nbsp;╚═════╝ ╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚══════╝╚══════╝</a></h5>
-            <h5 class="version">v1.0.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
+            <h5 class="version">
+                <a class="link blocks" href="https://turkeedurk.ee/updates">v1.0.0</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </h5>
         </div>
         <p style="padding:10px"></p> 
         <table class="centered" style="width:1000px">
@@ -178,61 +189,88 @@
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">ENGINEERING</p>
-                        <p class="element">├── 
+                        <p class="element">├─┬ 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience">experience</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Firefly">firefly</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/NG">ng</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/MDRS">mdrs</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Raytheon">raytheon</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Purdue-Orbital">purdue-orbital</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                        <p class="element">│&nbsp;├── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Micro-G">micro-g</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;└── 
+                        <p class="element">│&nbsp;└── 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/experience/ARA">ara</a>
                         </p>
-                        <p class="element">├── 
+                        <p class="element">├─┬ 
                             <a class="link blocks" href="https://turkeedurk.ee/eng/projects">projects</a>
                         </p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── blue-ghost</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── minotaur</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── radar</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── hapsis-α</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── placeholder</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;└── placeholder</p>
-                        <p class="element">├── school</p>
-                        <p class="element">├── resume</p>
-                        <p class="element">├── contact</p>
-                        <p class="element">└── sitemap█</p>
+                        <p class="element">│&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects/Blue-Ghost">blue-ghost</a>
+                        </p>
+                        <p class="element">│&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects/Minotaur">minotaur</a>
+                        </p>
+                        <p class="element">│&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects/MESA">mesa</a>
+                        </p>
+                        <p class="element">│&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects/Beowulf">beowulf</a>
+                        </p>
+                        <p class="element">│&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects/Hapsis-Alpha">hapsis-α</a>
+                        </p>
+                        <p class="element">│&nbsp;└── 
+                            <a class="link blocks" href="https://turkeedurk.ee/construction">placeholder</a>
+                        </p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/school">school</a>
+                        </p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/resume">resume</a>
+                        </p>
+                        <p class="element">└── 
+                            <a class="link blocks" href="mailto:turkeedurkee@gmail.com">contact</a>
+                        </p>
+                        
                     </div>
                 </td>
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">EXTRAS</p>
-                        <p class="element">├── placeholder</p>
-                        <p class="element"><a href="https://github.com/d3nn7/crt-css">custom link</a></p>
-                        <br>
-                        <p class="element">another line.</p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/construction">placeholder</a>
+                        </p>
+                        <p class="element">└── 
+                            <a class="link blocks" href="https://turkeedurk.ee/construction">placeholder</a>
+                        </p>
                     </div>
                 </td>
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">ABOUT</p>
-                        <p class="element">├── placeholder</p>
-                        <p class="element"><a href="https://github.com/d3nn7/crt-css">custom link</a></p>
-                        <br>
-                        <p class="element">another line.</p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/construction">placeholder</a>
+                        </p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/updates">updates</a>
+                        </p>
+                        <p class="element">└── 
+                            <a class="link blocks you-are-here-hover" href="https://turkeedurk.ee/sitemap">sitemap█</a>
+                            </br>
+                            <a class="you-are-here">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^ YOU ARE HERE</a>
+                        </p>
                     </div>
                 </td>
             </tr>
