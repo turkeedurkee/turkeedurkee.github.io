@@ -88,19 +88,26 @@
     }
 
     .blocks {
-        display: none;
+        /* display: none; */
         margin-top: -16px;
         /* font-size: 1.25em; */
     }
     
-    .link a:hover + .blocks {
+    /* .link a:hover + .blocks {
         display: block;
         color: #fee000;
-    }
-
-    /* .link a:hover{
-        background-color: #fee000;
     } */
+
+    a.blocks.link:hover{
+        background-color: #fee000;
+        color: rgba(0,0,0,0);
+        text-shadow: none;
+        box-shadow: 10px 0 0 #ea36af, -20px 0 0 #75fa69;
+        animation-duration: 0.01s;
+        animation-name: boxflicker;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
 
     @media screen and (min-width: 1200px) {
         body {
@@ -125,6 +132,15 @@
         }
     }
 
+    @keyframes boxflicker{
+    from {
+            box-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+        }
+        to {
+            box-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+        }
+    }
+
     </style>
     </head>
     
@@ -145,28 +161,50 @@
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">ARTWORK</p>
-                        <p class="element link">├── <a class="link" href="https://turkeedurk.ee/art/videos">videos</a>
-                            <div class="blocks">&nbsp;&nbsp;&nbsp;&nbsp;██████</div>
+                        <p class="element">├──
+                            <a class="link blocks" href="https://turkeedurk.ee/art/videos">videos</a>
                         </p>
-                        
-                        <p class="element">├── music</p>
-                        <p class="element">├── photos</p>
-                        <p class="element">└── recipes</p>
+                        <p class="element">├──
+                            <a class="link blocks" href="https://turkeedurk.ee/art/music">music</a>
+                        </p>
+                        <p class="element">├──
+                            <a class="link blocks" href="https://turkeedurk.ee/art/photos">photos</a>
+                        </p>
+                        <p class="element">└──
+                            <a class="link blocks" href="https://turkeedurk.ee/art/recipes">recipes</a>
+                        </p>
                     </div>
                 </td>
                 <td class="always-top">
                     <div class="tree">
                         <p class="element">ENGINEERING</p>
-                        <p class="element">├── experience</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── firefly</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── ng</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── mdrs</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── raytheon</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── orbital</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── micro-g</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;├── ara</p>
-                        <p class="element">│&nbsp;&nbsp;&nbsp;└── tigerden</p>
-                        <p class="element">├── projects</p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience">experience</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Firefly">firefly</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/NG">ng</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/MDRS">mdrs</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Raytheon">raytheon</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Purdue-Orbital">purdue-orbital</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/Micro-G">micro-g</a>
+                        </p>
+                        <p class="element">│&nbsp;&nbsp;&nbsp;└── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/experience/ARA">ara</a>
+                        </p>
+                        <p class="element">├── 
+                            <a class="link blocks" href="https://turkeedurk.ee/eng/projects">projects</a>
+                        </p>
                         <p class="element">│&nbsp;&nbsp;&nbsp;├── blue-ghost</p>
                         <p class="element">│&nbsp;&nbsp;&nbsp;├── minotaur</p>
                         <p class="element">│&nbsp;&nbsp;&nbsp;├── radar</p>
@@ -175,8 +213,8 @@
                         <p class="element">│&nbsp;&nbsp;&nbsp;└── placeholder</p>
                         <p class="element">├── school</p>
                         <p class="element">├── resume</p>
-                        <p class="element">└── contact</p>
-                        <!-- <p class="element">└── sitemap█</p> -->
+                        <p class="element">├── contact</p>
+                        <p class="element">└── sitemap█</p>
                     </div>
                 </td>
                 <td class="always-top">
