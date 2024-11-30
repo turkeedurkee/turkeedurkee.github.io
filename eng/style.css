@@ -3998,21 +3998,21 @@ footer
 
 .sides-2-1{
     margin: 0 auto;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .sides-1-2{
     margin: 0 auto;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
 .sides-1-1{
     margin: 0 auto;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -4025,6 +4025,10 @@ footer
 .sides-right{
     text-align: right;
     margin-left: 5%;
+}
+
+.sides-middle{
+    text-align: center;
 }
 
 .img-frame{
