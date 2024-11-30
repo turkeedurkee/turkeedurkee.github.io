@@ -3984,24 +3984,56 @@ footer
     width: 135px;
 }
 
-/* .timeline_title{
-
-} */
-
 .timeline_job{
     font-style: italic;
     border: none;
     border-bottom: 2px dotted #ddd;
 }
 
-/* .timeline_paragraph{
-    margin-bottom: 0px;
-} */
-
 .timeline_link{
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: 0px;
+}
+
+.sides-2-1{
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.sides-1-2{
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.sides-1-1{
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sides-left{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.sides-right{
+    text-align: right;
+    margin-left: 5%;
+}
+
+.img-frame{
+    padding: 10px;
+    display: block; 
+    height: auto; 
+    border: 1px solid #aaa; 
+    box-shadow: 2px 2px #ddd;
+    margin-bottom: 5px;
 }
 
 .pdf{
