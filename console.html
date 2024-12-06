@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <title>Oops! | TurkeeDurkee</title>
+	<link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+    body {
+	background-color: #1FBBFF
+	}
+    table.clear {
+		border:0px solid RGB(0,0,0,1);
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: RGB(0,0,0,0);
+     }
+    table.space {
+	    border:0px solid RGB(0,0,0,1);
+	    margin-left:auto;
+	    margin-right:auto;
+	    background-color: RGB(0,0,0,0);
+    }
+    .invert:hover{
+      filter: invert(100%);
+    }
+	.inverttv:hover{
+	filter: invert(100%);	
+	}
+    img.middle{
+    display: block;
+    margin-left:auto; 
+    margin-right:auto;
+    }
+    img.middleinvert{
+    display: block;
+    margin-left:auto; 
+    margin-right:auto;
+    }
+    p {
+    text-align: center; color:#000000;
+    }
+    h4 {
+    text-align: center; color:black;
+    }
+    
+    
+    
+    * {
+	margin:0;
+	padding:0
+}/* for demo only - use a proper reset of your own*/
+body { padding:20px 10px }
+a img {
+	display:block;
+	border:none;
+}
+.outer {
+	width:480px;
+	height:50px;
+	margin:auto;
+	border:0px solid #000;
+	position:relative;/* stacking context*/
+}
+.image-holder {
+	float:right;
+	margin:6px 10px 10px 0;
+	width:400px;
+	height:200px;
+	border:0px solid #000;
+	padding:1px;
+	position:relative;
+	z-index:1;
+	display:block;
+}
+ul.links {
+	list-style:none;
+}
+
+.links li a {
+	display:block;
+	width:90px;
+	padding:2px;
+	text-decoration:none;
+}
+
+.links li a span, .links li a b { /*dont touch these*/
+	position:absolute;
+	right:24px;
+	top:-999em;
+	width:300px;
+	height:300px;
+	z-index:2;
+}
+.links li a span img {
+	display:block;
+	margin:0 0 5px
+}
+.links li a:hover, .links li.over a {
+	visibility:visible;
+}
+.links li a:hover span, .links li.over a span {top:-77px; left:556px;}/*second tv position*/
+.links li a:hover b, .links li.over a b {
+	top:500px;
+	left:0px;
+	height:auto;
+}
+
+    </style>
+  
+
+
+<body>
+	<table class="clear" width=998px>
+		<td>
+			<tr>
+				
+			</tr>
+		</td>
+	</table>
+  	<p style="padding:150px"></p>
+  	<h4 style="color:black"><i>how did u get here???</i></h4>
+  	<p style="padding:20px"></p>
+  	<div style="text-align: center;">
+  		<script type="text/javascript" src="https://counter.websiteout.com/js/9/0/0/0"></script>
+	</div>
+  	<p style="padding:10px"></p>
+  	<p style="color:black"><i>Site visit counter. Is it counting visits to all TD pages or just to /console?</i></p>
+</body>
+  
+</html>
