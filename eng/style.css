@@ -4876,6 +4876,10 @@ footer
     color: #ffdfdf; fill: #ffdfdf;
 }
 
+.wii{
+    color: rgba(106,186,234,255);
+}
+
 .color-inherit
 {
     color: inherit;
@@ -5171,6 +5175,11 @@ footer
 .bg-washed-red
 {
     background-color: #ffdfdf;
+}
+
+.bg-wii 
+{
+    background-color: rgba(106,186,234,255);
 }
 
 .bg-inherit
