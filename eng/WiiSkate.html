@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+        <meta name="application-name" content="TurkeeDurkee"/>
+        <meta name="description" content="Ben Durkee engineering portfolio"/>
+        <meta name="format-detection" content="telephone=no">
+        
+        <link rel="canonical" href="https://turkeedurk.ee/"/>
+        
+        <link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/icons/favicon.ico">
+
+
+        <meta name="application-name" content="TurkeeDurkee"/>
+        <meta name="msapplication-TileColor" content="#000000"/>
+        
+            <meta property="og:site_name" content="TurkeeDurkee"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="TurkeeDurkee"/>
+            <meta property="og:description" content="Ben Durkee engineering portfolio"/>
+            <meta property="og:url" content="https://turkeedurk.ee/"/>
+
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./style-icons.css"/>
+        <title>RTX | TurkeeDurkee</title>
+        
+    </head>
+
+    
+        <body class="berkeleygraphics measure-60 responsive-30-phone p-centered">
+    
+
+    <!--HEADER-->
+
+    <header class="container bottom-3 bn">
+        <nav class="navbar bb b--moon-gray mb3">
+            <div class="navbar-section navbar-logo">
+                <h1 class="navbar-brand">
+                    <a class="navbar-logo" href="../">
+                        <img src="../img/Eng-Header-Logo.png" class="navbar-logo-img" alt="Home"/>
+                    </a>
+                </h1>
+            </div>
+
+            <div class="navbar-section">
+                
+                    <div class="mt2 mr2"><a class="no-decoration" href="../updates"><span title="Deployment environment" class="number white bg-dark-green ba b--black pl1 pr1">PROD</span></a></div>
+                
+                <div class="mt2"><a class="no-decoration" href="../updates"><span title="Website version" class="number black bg-moon-gray ba b--black pl1 pr1">v1.0.0</span></a></div>
+            </div>
+        </nav>
+            <nav class="">
+                <div class="columns">
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="./experience">Experience</a>
+                    </div>
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="./projects">Projects</a>
+                    </div>
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="./education">Education</a>
+                    </div>
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="./resume">Résumé</a>
+                    </div>
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="mailto:turkeedurkee@gmail.com">Contact</a>
+                    </div>
+                    <div class="column col-2 col-sm-4 col-md-4 p-centered mb2">
+                        <a class="btn black bg-white w100" href="../sitemap">Sitemap</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    
+
+    <!--BODY-->
+
+    <main>
+        
+    <div class="container">
+        <div class="columns bottom-1">
+            <h2 class="mb3">My time at:</h2>
+                <img class="img-card w100" src="https://turkeedurk.ee/img/logos/RTX-Banner.png" alt="RTX-Banner"/>
+        </div>
+
+        <br>
+
+        <div id="JPSS-2">
+            <b>Intelligence and Space Internship:</b> (June 2021 - August 2021)
+            <br><br>
+            &emsp;&emsp;The summer after my senior year, I did an internship as a Guidance, Navigation, and Controls engineer in Raytheon's Intelligence and Space Division. 
+            When I worked there, the merger with United Technologies Corporation hadn't yet finalized, and the rebrand to "RTX" was still on the horizon.
+            <br><br>
+            &emsp;&emsp;I found this opportunity through my girlfriend at the time, who was family friends with the I&S Division's Chief of Staff. 
+            Never underestimate the power (and necessity) of networking!
+            <br><br>
+            &emsp;&emsp;My time was dedicated to developing orbit determination code for NOAA's Joint Polar Satellite System 2 (JPSS-2). 
+            I also spent a good deal of time liaising with the customer, refining their requirements and elucidating how my team's work would satisfy them.
+            <br><br>
+        </div>
+        <div class="sides-middle" style="margin-right: 10px; margin-left: 10px;">
+            <img class="img-frame w100" style="margin-bottom: 10px;" src="https://turkeedurk.ee/img/JPSS-Render.jpg" alt="JPSS-2"/>
+            <a class="btn white bg-dark-red" href="https://eospso.nasa.gov/missions/joint-polar-satellite-system-2">
+                Learn more about JPSS-2
+            </a>
+        </div>
+        </div>
+        <div>
+            <br>
+            &emsp;&emsp;Over the course of the summer, I wrote the satellite's backorbit calculator. This software crunched the satellite's own ephemeris data to predict when it would enter and exit "backorbit" - locations where it could not communicate with any of our ground stations. 
+            When entering one of these zones, it would cease data transmission to save on power. The power margins on the spacecraft were thin enough that this conservational functionality was a necessity, not just a "nice-to-have."
+            <br><br>
+            &emsp;&emsp;I initially created the calculator in an Excel VBA macro to bolster and review my understanding of ephemerides and two-body orbital dynamics. 
+            Then, I ported the software into Perl, which was necessary to test and ultimately push to the spacecraft's final build. 
+            Not to mention the code could be made infinitely more elegant and compact in a scripting language such as Perl.
+            <br><br>
+            &emsp;&emsp;I was able to test the software on a simulation of the spacecraft in a SEIT ops-like environment, where a digital imitation of the spacecraft's lifetime was being run 24/7.
+            <br><br>
+            &emsp;&emsp;JPSS-2 launched from Vandenberg SFB on November 10, 2022. It flew on a ULA Atlas V rocket and shared the fairing with NASA's experimental LOFTID payload. The craft is currently operational and is expected to remain in operation for a minimum of 7 years.
+            <br><br>
+        </div>
+        <div class="sides-middle" style="margin-right: 10px; margin-left: 10px;">
+            <iframe class="img-frame w100" style="height: 390px;  margin-bottom: 10px;" src="https://www.youtube.com/embed/bpFZv7oZtqs?si=kVmDwTfcTXxL5ZXz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="display: block; margin: auto;"></iframe>
+            
+            <a class="btn white bg-dark-red" href="https://www.nesdis.noaa.gov/our-satellites/currently-flying/jpss-2-launch">
+                Watch the full launch
+            </a>
+        </div>
+        <div>
+            <br>
+            &emsp;&emsp;I learned a ton about the behind-the-scenes of spacecraft over the few months I spent at Raytheon, but my biggest takeaway was that I couldn't spend the rest of my life as a programmer or dynamicist. Hardware is my bread and butter.
+            <br><br>
+            &emsp;&emsp;Three years after working on its predecessor, I would get to see JPSS-3 in its cleanroom in Gilbert, AZ. 
+            This followed an interview with the Northrop Grumman Spacecraft Integration team about their work on the HALO program, an essential part of NASA's planned lunar Gateway station.
+            
+        </div>
+
+
+        <hr>
+
+<h2 class="mb3">Organizations:</h2>
+
+<div class="columns bottom-1">
+    
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/Firefly-Logo.png" alt="Firefly"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/NG-Logo.png" alt="Northrop Grumman"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/Raytheon-Logo.png" alt="Raytheon"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/NASA-Logo.png" alt="NASA"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/Mars-Logo.png" alt="The Mars Society"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/ARA-Logo.png" alt="Applied Research Associates"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/Orbital-Logo.png" alt="Purdue Orbital"/>
+    </div>
+
+    <div class="column col-3 col-sm-6 col-md-6 bottom-1">
+        <img class="img-card w100" src="../img/logos/TigerDen-Logo.png" alt="TigerDen"/>
+    </div>
+
+</div>
+    
+    
+    </div>
+
+
+    </main>
+
+</body>
+</html>
