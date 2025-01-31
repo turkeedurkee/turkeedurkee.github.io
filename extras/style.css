@@ -1,17 +1,23 @@
+@font-face {
+  font-family: "Nasalization";
+  font-weight: normal; font-style: normal; font-stretch: normal; src: url('../fonts/Nasalization.otf');
+}
+
 body {
     /* background-color: #e7dac5; */
     /* background-color: #282524; */
     background: linear-gradient(90deg, #e7dac5 50%, #331c1d 50%);
     font-family: 'Segoe UI', SegoeUI, 'Noto Sans', sans-serif;
     font-size: 12px;
+    margin: 0;
     /* opacity: 0;
     transition: opacity .5s; */
   }
 
 h1 {
     text-align: center;
-    font-family: 'Nasalization'; font-weight: normal; font-style: normal; font-stretch: normal; src: url('../fonts/Nasalization Rg.otf');
-    font-size: 600%;
+    font-family: 'Nasalization';
+    font-size: 580%;
     color: black;
     margin: auto;
     position: relative;
@@ -20,7 +26,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-family: 'Nasalization'; font-weight: normal; font-style: normal; font-stretch: normal; src: url('../fonts/Nasalization Rg.otf');
+    font-family: 'Nasalization';
     font-size: 420%;
     letter-spacing: 10%;
     color: #331c1d;
@@ -28,7 +34,10 @@ h2 {
     letter-spacing: -0.2em;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    opacity: 0%;
+}
+
+.invis {
+  opacity: 0%;
 }
 
 .stripe-container {
@@ -41,66 +50,144 @@ h2 {
     display: flex;
     flex-direction: row;
     margin: 0%;
-    transition: 1s ease-out;
+    transition: 0.8s ease-out;
   }
 
 .stripe-container.unlocked:hover {
-    left: 33.5%;
-    width: 33%;
+  left: 33.5%;
+  width: 33%;
 }
 
-#text {
-    transition: 0.5s ease-out;
-}
-
-  .stripe {
-    position: relative;
-    top: 0;
-    /* left: 35.5%; */
-    left: 0;
-    height: 100%;
-    width: 16.666667%;
-    /* margin: 0% 0.25%; */
-    /* transform: translateX(100%); */
-    transition: 1s ease-out;
-    
-  }
-
-  .stripe.unlocked:hover {
-    width: 27%;
-    
-  }
-
-  .stripe.unlocked:hover h2 {
-    opacity: 100%;
-  }
-
-  #E {
-    background-color: #f1d736;
-    /* opacity: 50%; */
-  }
-
-  #X {
-    background-color: #ed8f31;
-  }
-
-  #T {
-    background-color: #e87931;
-  }
-
-  #R {
-    background-color: #eb682e;
-  }
+.stripe {
+  position: relative;
+  top: 0;
+  /* left: 35.5%; */
+  left: 0;
+  height: 100%;
+  width: 16.666667%;
+  /* margin: 0% 0.25%; */
+  /* transform: translateX(100%); */
+  transition: 0.8s ease-out;
   
-  #A {
-    background-color: #e94d2e;
-  }
+}
 
-  #S {
-    background-color: #e64e76;
-  }
+.stripe.unlocked:hover {
+  width: 24.242424%;
+  
+}
 
-  /* .X:hover {
-    position: fixed;
-    left: 40.5%;
-  } */
+.stripe.unlocked.side:hover {
+  width: 8%;
+}
+
+.stripe.unlocked:hover h1 {
+  opacity: 100%;
+}
+
+.stripe.unlocked:hover h2 {
+  opacity: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.side {
+  width: 4%;
+}
+
+.mainpage {
+  opacity: 0%;
+  transition: 0.6s ease-out;
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+}
+
+.mainpage.loaded {
+  opacity: 100%;
+}
+
+.Etext {
+  transition: 0.6s ease-out;
+}
+
+.Xtext {
+  transition: 0.6s ease-out;
+}
+
+.Ttext {
+  transition: 0.6s ease-out;
+}
+
+.Rtext {
+  transition: 0.6s ease-out;
+}
+
+.Atext {
+  transition: 0.6s ease-out;
+}
+
+.Stext {
+  transition: 0.6s ease-out;
+}
+
+#E {
+  background-color: #f1d736;
+  /* opacity: 50%; */
+}
+
+#X {
+  background-color: #ed8f31;
+  /* opacity: 50%; */
+}
+
+#T {
+  background-color: #e87931;
+  /* opacity: 50%; */
+}
+
+#R {
+  background-color: #eb682e;
+  /* opacity: 50%; */
+}
+
+#A {
+  background-color: #e94d2e;
+  /* opacity: 50%; */
+}
+
+#S {
+  background-color: #e64e76;
+  /* opacity: 50%; */
+}
+
+.E-focus {
+  width: 82%;
+  left: 15.8335%;
+}
+
+.X-focus {
+  width: 82%;
+  left: 13.1003%;
+}
+
+.T-focus {
+  width: 82%;
+  left: 10.3671%;
+}
+
+.R-focus {
+  width: 82%;
+  left: 7.63395%;
+}
+
+.A-focus {
+  width: 82%;
+  left: 4.9008%;
+}
+
+.S-focus {
+  width: 82%;
+  left: 2.1676%;
+}
