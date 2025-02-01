@@ -17,41 +17,69 @@ body {
 h1 {
     text-align: center;
     font-family: 'Nasalization';
-    font-size: 580%;
+    font-size: 2.71vw;
     color: black;
     margin: auto;
     position: relative;
-    top: 37%;
+    top: 42%;
 }
 
 h2 {
     text-align: center;
     font-family: 'Nasalization';
-    font-size: 420%;
+    font-size: 2.71vw;
     letter-spacing: 10%;
     color: #331c1d;
     margin: auto;
     letter-spacing: -0.2em;
     writing-mode: vertical-lr;
     text-orientation: upright;
+    position: relative;
+    vertical-align: middle;
 }
 
 .invis {
   opacity: 0%;
 }
 
+h2 span {
+  transition: 0.8s ease-out;
+}
+
+.test {
+  /* display: inline-block; */
+  text-align: center;
+  font-family: 'Nasalization';
+  font-size: 2.71vw;
+  letter-spacing: 10%;
+  color: #331c1d;
+  margin: auto;
+  letter-spacing: -0.2em;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.center {
+  /* margin: 0; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 .stripe-container {
-    position: relative;
-    top: 0;
-    left: 35%;
-    height: 100vh;
-    width: 30%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    margin: 0%;
-    transition: 0.8s ease-out;
-  }
+  position: relative;
+  top: 0;
+  left: 35%;
+  height: 100vh;
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  transition: 0.8s ease-out;
+}
 
 .stripe-container.unlocked:hover {
   left: 33.5%;
@@ -85,6 +113,10 @@ h2 {
 }
 
 .stripe.unlocked:hover h2 {
+  opacity: 100%;
+}
+
+.stripe.unlocked:hover span {
   opacity: 100%;
 }
 

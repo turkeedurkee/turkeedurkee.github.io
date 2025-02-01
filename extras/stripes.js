@@ -20,7 +20,7 @@ function clickE(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("X-focus T-focus R-focus A-focus S-focus"); //Removes any other page position classes
   $("#container").addClass("E-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#X, #T, #R, #A, #S").removeClass("main"); //Makes other stripes smaller for sides
   $("#X, #T, #R, #A, #S").addClass("side"); //Makes other stripes smaller for sides
   $("#E").removeClass("side"); //Makes this stripe the mainpage
@@ -39,7 +39,7 @@ function clickX(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("E-focus T-focus R-focus A-focus S-focus"); //Removes any other page position classes
   $("#container").addClass("X-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#E, #T, #R, #A, #S").removeClass("main"); //Makes other stripes smaller for sides
   $("#E, #T, #R, #A, #S").addClass("side"); //Makes other stripes smaller for sides
   $("#X").removeClass("side"); //Makes this stripe the mainpage
@@ -58,7 +58,7 @@ function clickT(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("E-focus X-focus R-focus A-focus S-focus"); //Removes any other page position classes
   $("#container").addClass("T-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#E, #X, #R, #A, #S").removeClass("main"); //Makes other stripes smaller for sides
   $("#E, #X, #R, #A, #S").addClass("side"); //Makes other stripes smaller for sides
   $("#T").removeClass("side"); //Makes this stripe the mainpage
@@ -77,7 +77,7 @@ function clickR(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("E-focus X-focus T-focus A-focus S-focus"); //Removes any other page position classes
   $("#container").addClass("R-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#E, #X, #T, #A, #S").removeClass("main"); //Makes other stripes smaller for sides
   $("#E, #X, #T, #A, #S").addClass("side"); //Makes other stripes smaller for sides
   $("#R").removeClass("side"); //Makes this stripe the mainpage
@@ -96,7 +96,7 @@ function clickA(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("E-focus X-focus T-focus R-focus S-focus"); //Removes any other page position classes
   $("#container").addClass("A-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#E, #X, #T, #R, #S").removeClass("main"); //Makes other stripes smaller for sides
   $("#E, #X, #T, #R, #S").addClass("side"); //Makes other stripes smaller for sides
   $("#A").removeClass("side"); //Makes this stripe the mainpage
@@ -115,7 +115,7 @@ function clickS(href) {
   $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
   $("#container").removeClass("E-focus, X-focus, T-focus, R-focus, A-focus"); //Removes any other page position classes
   $("#container").addClass("S-focus"); //Sets table size to be big enough for full page
-  $("h1, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode (only important for the Extras homepage)
   $("#E, #X, #T, #R, #A").removeClass("main"); //Makes other stripes smaller for sides
   $("#E, #X, #T, #R, #A").addClass("side"); //Makes other stripes smaller for sides
   $("#S").removeClass("side"); //Makes this stripe the mainpage
