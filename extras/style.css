@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "Nasalization";
+  font-weight: normal; font-style: normal; font-stretch: normal; src: url('../fonts/Nasalization.otf');
+}
+
+body {
+    /* background-color: #e7dac5; */
+    /* background-color: #282524; */
+    background: linear-gradient(90deg, #e7dac5 50%, #331c1d 50%);
+    font-family: 'Segoe UI', SegoeUI, 'Noto Sans', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    /* opacity: 0;
+    transition: opacity .5s; */
+  }
+
+h1 {
+    text-align: center;
+    font-family: 'Nasalization';
+    font-size: 2.71vw;
+    color: black;
+    margin: auto;
+    position: relative;
+    top: 42%;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Nasalization';
+    font-size: 2.71vw;
+    letter-spacing: 10%;
+    color: #331c1d;
+    margin: auto;
+    letter-spacing: -0.2em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: relative;
+    vertical-align: middle;
+}
+
+.invis {
+  opacity: 0%;
+}
+
+h2 span {
+  transition: 0.8s ease-out;
+}
+
+.test {
+  /* display: inline-block; */
+  text-align: center;
+  font-family: 'Nasalization';
+  font-size: 2.71vw;
+  letter-spacing: 10%;
+  color: #331c1d;
+  margin: auto;
+  letter-spacing: -0.2em;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.center {
+  /* margin: 0; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.stripe-container {
+  position: relative;
+  top: 0;
+  left: 35%;
+  height: 100vh;
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  transition: 0.8s ease-out;
+}
+
+.stripe-container.unlocked:hover {
+  left: 33.5%;
+  width: 33%;
+}
+
+.stripe {
+  position: relative;
+  top: 0;
+  /* left: 35.5%; */
+  left: 0;
+  height: 100%;
+  width: 16.666667%;
+  /* margin: 0% 0.25%; */
+  /* transform: translateX(100%); */
+  transition: 0.8s ease-out;
+  
+}
+
+.stripe.unlocked:hover {
+  width: 24.242424%;
+  
+}
+
+.stripe.unlocked.side:hover {
+  width: 8%;
+}
+
+.stripe.unlocked:hover h1 {
+  opacity: 100%;
+}
+
+.stripe.unlocked:hover h2 {
+  opacity: 100%;
+}
+
+.stripe.unlocked:hover span {
+  opacity: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.side {
+  width: 4%;
+}
+
+.mainpage {
+  opacity: 0%;
+  transition: 0.6s ease-out;
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+}
+
+.mainpage.loaded {
+  opacity: 100%;
+}
+
+.Etext {
+  transition: 0.6s ease-out;
+}
+
+.Xtext {
+  transition: 0.6s ease-out;
+}
+
+.Ttext {
+  transition: 0.6s ease-out;
+}
+
+.Rtext {
+  transition: 0.6s ease-out;
+}
+
+.Atext {
+  transition: 0.6s ease-out;
+}
+
+.Stext {
+  transition: 0.6s ease-out;
+}
+
+#E {
+  background-color: #f1d736;
+  /* opacity: 50%; */
+}
+
+#X {
+  background-color: #ed8f31;
+  /* opacity: 50%; */
+}
+
+#T {
+  background-color: #e87931;
+  /* opacity: 50%; */
+}
+
+#R {
+  background-color: #eb682e;
+  /* opacity: 50%; */
+}
+
+#A {
+  background-color: #e94d2e;
+  /* opacity: 50%; */
+}
+
+#S {
+  background-color: #e64e76;
+  /* opacity: 50%; */
+}
+
+.E-focus {
+  width: 82%;
+  left: 15.8335%;
+}
+
+.X-focus {
+  width: 82%;
+  left: 13.1003%;
+}
+
+.T-focus {
+  width: 82%;
+  left: 10.3671%;
+}
+
+.R-focus {
+  width: 82%;
+  left: 7.63395%;
+}
+
+.A-focus {
+  width: 82%;
+  left: 4.9008%;
+}
+
+.S-focus {
+  width: 82%;
+  left: 2.1676%;
+}

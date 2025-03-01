@@ -172,7 +172,7 @@
       <img src="../img/frutiger-photos.png">
     </a>
 
-    <!--FIRST BOX-->
+    <!--CONSTRUCTION-->
     <div class="background">
       <div class="window active color" style="max-width: 700px">
         <div class="title-bar">
@@ -198,27 +198,112 @@
 
 
     <!--AD(S)-->
+    <table style="margin: 0 auto;">
+      <td>
+        <img id="ad" src="../img/ads/sega-goggles.jpg">
+      </td>
+    </table>
+
+    <div style="text-align: center">
+      <!-- POP-UP PROMPT -->
+      <a href="#dialog-demo" style="text-align: center;">
+        <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
+      </a>
+
+      <!-- POP-UP -->
+      <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
+        <div class="title-bar">
+          <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" onclick="history.back()"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <h2 class="instruction instruction-primary">Because they are very good and I like them :)</h2>
+          <div role="progressbar" class="marquee"></div>
+        </div>
+        <footer style="text-align: right;">
+          <button onclick="history.back()" style="font-size: 12px; font-family: 'Segoe UI', SegoeUI, 'Noto Sans', sans-serif;">Okay</button>
+        </footer>
+      </div>
+    </div>
+
     <br>
 
-    <table align="center">
-      <th>
-        <img id="ad" src="../img/nokia.jpg">
-      </th>
-      <th>
-        <img id="ad" src="../img/obama.jpg">
-      </th>      
+
+    <!--CONSTRUCTION-->
+    <div class="background">
+      <div class="window active color" style="max-width: 700px">
+        <div class="title-bar">
+          <div class="title-bar-text">Oops!</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <p style="padding:10px"></p>
+          <div style="text-align: center;">
+            <img style="width:150px" src="../img/construction_pika.gif">
+            <br>
+            <p>
+              Oops, this page is still under construction!
+            </p>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+    <!--AD(S)-->
+    <table style="margin: 0 auto;">
+      <td>
+        <img id="ad" src="../img/ads/matrox-upgrade.jpg">
+      </td>
     </table>
+
+    <div style="text-align: center">
+      <!-- POP-UP PROMPT -->
+      <a href="#dialog-demo" style="text-align: center;">
+        <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
+      </a>
+
+      <!-- POP-UP -->
+      <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
+        <div class="title-bar">
+          <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" onclick="history.back()"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <h2 class="instruction instruction-primary">Because they are very good and I like them :)</h2>
+          <div role="progressbar" class="marquee"></div>
+        </div>
+        <footer style="text-align: right;">
+          <button onclick="history.back()" style="font-size: 12px; font-family: 'Segoe UI', SegoeUI, 'Noto Sans', sans-serif;">Okay</button>
+        </footer>
+      </div>
+    </div>
+
     <br>
+
+
   </div>
 </div>
 
-<div class="window active color glass" id="mydiv" style="top:300px; left:250px; max-width:300px; min-width:200px">
+<p style="padding:10px"></p>
+
+
+<!-- DRAGGABLE BOX -->
+<div class="window active color glass nav" id="mydiv" style="top:300px; left:250px; max-width:300px; min-width:200px">
   <div class="title-bar" id="mydivheader">
     <div class="title-bar-text">Navigation</div>
     <div class="title-bar-controls">
-      <button aria-label="Minimize"></button>
-      <button aria-label="Maximize"></button>
-      <button aria-label="Close"></button>
+      <!-- <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button> -->
+      <button aria-label="Close" onclick="document.getElementById('mydiv').style.display='none'"></button>
     </div>
   </div>
   <div class="window-body has-space">
@@ -248,7 +333,6 @@
   <img id="start" src="../img/start-off.png" onmouseover="this.src='../img/start-on.png';" onmouseout="this.src='../img/start-off.png';" />
 </a>
 
-<p style="padding:10px"></p>
 
 <script type="text/javascript">
   // Make the DIV element draggable:
