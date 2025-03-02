@@ -4,11 +4,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.4">
-<title>Websurf | TurkeeDurkee</title>
+<title>Guestbook | TurkeeDurkee</title>
 <meta name="description" content="Ben Durkee's personal website">
 
 <link rel="icon" type="image/x-icon" href="../img/icons/favicon.ico">
 <link href="../extras/style.css" rel="stylesheet" type="text/css" media="all">
+
+<style>
+
+    /* SCROLLBAR */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 14px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #eb682e; 
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #e87931;
+        border-radius: 0 15px 15px 0;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #e7dac5;
+    }
+    </style>
 
 </head>
 
@@ -36,17 +61,18 @@
         <!-- GUESTBOOK PAGE GOES HERE -->
         <span class="stripe main" id="T">
             <div class="mainpage">
+                <div class="content">
 
-                <h1>
-                    GUES<b style="font-size:100%;">T</b>BOOK
-                </h1>
+                    <h1 style="z-index: 500;">
+                        GUES<b style="font-size:100%;">T</b>BOOK
+                    </h1>
 
-                <br>
-                <br>
 
-                <iframe class="mainpage" title="Guestbook" id="guestbook" src="https://turkeedurkee.atabook.org/"style="height: 700px; width: 700px"> 
-                </iframe>
-                
+                    <!-- CHANGE THIS ELEMENT's HEIGHT IN "em" WHEN LENGTHENING GUESTBOOK BOX -->
+                    <iframe title="Guestbook" class="fadeIn-block" id="guestbook" src="https://turkeedurkee.atabook.org/" style="border: 0; padding: 0; margin-top: -4em; height: 200em; width: 90%;"> 
+                    </iframe>
+
+                </div>
             </div>
         </span>
 
