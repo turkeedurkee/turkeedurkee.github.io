@@ -4023,6 +4023,13 @@ footer
     grid-template-columns: 1fr 1fr;
 }
 
+.sides-4-1{
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
 .sides-left{
     text-align: left;
     margin-right: 5%;
