@@ -43,6 +43,48 @@ h2 {
     vertical-align: middle;
 }
 
+h4 {
+  font-family: 'Nasalization';
+  font-size: 2em;
+  font-weight: bold;
+  color: #331c1d;
+  margin: 0.5em 0;
+}
+
+a {
+  color: #e94d2e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #331c1d;
+}
+
+a.brown-white {
+  color: #331c1d;
+}
+
+a.brown-white:hover {
+  color: #e7dac5;
+}
+
+.fadr {
+  color: #e64e76;
+  font-weight: 700;
+}
+
+hr {
+  overflow: visible;
+  /* height: 0.1em; */
+  margin: 1em 0 1em;
+  color: black;
+  border: 0.1em solid #331c1d;
+  border-radius: 0.1em;
+  /* border-top: 2px dotted #ddd; */
+  /* border-top: 0.1em solid #331c1d; */
+  opacity: 25%;
+}
+
 .invis {
   opacity: 0%;
   transition: 0.6s ease-out;
@@ -153,6 +195,13 @@ h2 span {
 .content {
   margin: auto;
   padding: 3% 5% 5% 5%;
+}
+
+.content p {
+  font-size: 1.4em;
+  font-family:'CQ Mono';
+  font-weight: 1;
+  color: #331c1d;
 }
 
 .border {
@@ -326,4 +375,14 @@ h2 span {
 
 .blog-img:hover {
   filter: brightness(70%);
+}
+
+.recs-img {
+  height: 15em;
+  transition: 0.3s;
+}
+
+.recs-img:hover {
+  transform: rotate(2.5deg);
+  /* transform: translateY(100px;) */
 }
