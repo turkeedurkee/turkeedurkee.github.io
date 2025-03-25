@@ -388,11 +388,68 @@ h2 span {
 .recs-img {
   height: 15em;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .recs-img:hover {
   transform: rotate(2.5deg);
   /* transform: translateY(100px;) */
+}
+
+.popup {
+  position: fixed;
+  background-color: #331c1d;
+  width: 50em;
+  height: auto;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2em;
+  visibility: hidden;
+  padding: 0.5em 2em;
+}
+
+.popup-bg {
+  position: fixed;
+  z-index: 999;
+  background-color: black;
+  opacity: 60%;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  /* cursor: pointer; */
+}
+
+.front {
+  visibility: visible;
+}
+
+.popup p {
+  color: #e7dac5;
+}
+
+.X {
+  position: absolute;
+  margin: 0;
+  font-size: 1.2em;
+  right: 1.5em;
+  top: 0.8em;
+  cursor: pointer;
+  /* font-family: 'Nasalization'; */
+  /* idk why the font dont wanna work. gave up */
+}
+
+.X:hover {
+  color: #e7dac5aa;
+}
+
+.popup h4 {
+  color:#e7dac5;
+}
+
+.popup p{
+  text-align: left;
 }
 
 .archive-block {

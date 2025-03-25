@@ -126,3 +126,16 @@ function clickS(href) {
     window.location.href = href;
   }, 1000);
 }
+
+
+//RECS POPUP
+function recsPopup(id) {
+  $(".popup-bg").addClass("front"); //Make the bg appear
+  $(id).addClass("front"); //Make the inputted review pop up
+}
+
+
+//RECS DISAPPEAR
+function recsVanish() {
+  $(".front").removeClass("front");
+}

@@ -38,6 +38,7 @@
 </head>
 
 <body>
+    <div class="popup-bg" onclick="recsVanish()"></div>
     <div class="stripe-container R-focus" id="container">
 
         <!-- E (WEBSURF) -->
@@ -73,6 +74,7 @@
         <span class="stripe main" id="R">
             <div class="mainpage">
                 <div class="content">
+                    
 
                     <h1>
                         <b style="font-size:100%;">R</b>ECOMMENDATIONS
@@ -85,17 +87,27 @@
                     <table style="margin: auto;">
                         <tr>
 
-                            <!-- FIGURE OUT HOW TO MAKE REVIEW BOX APPEAR ONCE YOU HAVE WIFI -->
+                            <!-- FLOATING POINT -->
                             <td style="padding: 0 0.2em;">
-                                <a class="recs-img" href="google.com">
-                                    <img class="recs-img" src="../img/recs/FloatingPoint.jpeg">
-                                </a>
+                                
+                                <img class="recs-img" src="../img/recs/FloatingPoint.jpeg" onclick="recsPopup('#floatingPoint')">
+                                <div id="floatingPoint" class="popup">
+                                    <p class="X" onclick="recsVanish()">x</p>
+                                    <h4>Floating Point</h4>
+                                    <p>Floating Point is a little free game about momentum and flow. Since 2014, I've been visiting this game to help me relax on nights I couldn't sleep. It's peaceful, the music is hypnotic, and there's a grappling hook. The gameplay is simple: touch all the bars on the level. The faster you move, the more points the bars give and the taller they grow (making them easier to hit).</p>
+                                    <p>Made by Tom Francis - the indie creator of Gunpoint, Heat Signature, and Tactical Breach Wizards. It's a good time! And free, so you have nothing to lose.</p>
+                                </div>
                             </td>
 
+                            <!-- BEFORE YOUR EYES -->
                             <td style="padding: 0 0.2em;">
-                                <a class="recs-img">
-                                    <img class="recs-img" src="../img/recs/BeforeYourEyes.jpg">
-                                </a>
+                                <img class="recs-img" src="../img/recs/BeforeYourEyes.jpg" onclick="recsPopup('#beforeYourEyes')">
+                                <div id="beforeYourEyes" class="popup">
+                                    <p class="X" onclick="recsVanish()">x</p>
+                                    <h4>Before Your Eyes</h4>
+                                    <p>Whenever I'm in a conversation with someone who's skeptical that video games can be art, this game is my go-to example. The only controls for this game are looking around with your mouse and <i>blinking.</i> The entire story is told from the first person perspective, and time jumps forward every time your camera detects that you blink.</p>
+                                    <p>The runtime is about 2 hours, but you'll be thinking about it for years. Bring tissues.</p>
+                                </div>
                             </td>
 
                         </tr>
@@ -104,6 +116,26 @@
                     <hr>
 
                     <h4>movies</h4>
+
+                    <table style="margin: auto;">
+                        <tr>
+
+                            <!-- FLOATING POINT -->
+                            <td style="padding: 0 0.2em;">
+                                
+                                <img class="recs-img" src="../img/recs/Marcel.jpg" onclick="recsPopup('#marcel')">
+                                <div id="marcel" class="popup">
+                                    <p class="X" onclick="recsVanish()">x</p>
+                                    <h4>Marcel The Shell With Shoes On</h4>
+                                    <p>I'm one to dramatically eyeroll when an age-old media franchise is resurrected for a movie or sequel to cash in on a beloved IP. I was even more cynical about this happening to a silly viral video from the early days of YouTube, which I used to quote incessantly with my sister. So imagine my shock when I watched the <i>Marcel The Shell With Shoes On</i> movie and it turned out to be a complete and utter bop.</p>
+                                    <p>Heartwarming, pleasant, beautifully shot and stop-motion animated. The whole movie has this soft, gentle quality to it, like a sunbeam on a lazy morning. And we could all learn to be a little more like Marcel.</p>
+                                </div>
+                            </td>
+
+                            
+
+                        </tr>
+                    </table>
 
                     <hr>
 
