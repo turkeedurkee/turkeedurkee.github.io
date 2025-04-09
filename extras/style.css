@@ -137,6 +137,20 @@ h2 span {
   transition: 0.8s ease-out;
 }
 
+/* CLONE OF STRIPE CONTAINER FOR JAVASCRIPT "COLLAPSE" FUNCTION TO RESET */
+.reset {
+  position: relative;
+  top: 0;
+  left: 35%;
+  height: 100vh;
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  transition: 0.8s ease-out;
+}
+
 .stripe-container.unlocked:hover {
   left: 33.5%;
   width: 33%;
@@ -459,4 +473,48 @@ h2 span {
   margin: 1.5em auto;
   text-align: left;
   padding: 0.5em 2em;
+}
+
+footer p {
+  text-align: center;
+  opacity: 60%;
+}
+
+.footer-link {
+  color: black;
+}
+
+.footer-link:hover {
+  filter: invert(100%);
+}
+
+span .footer-link:hover {
+  cursor: pointer;
+}
+
+.footer-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-line {
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32em;
+  color: black;
+  border: 0.1em dashed #331c1d;
+  border-radius: 0.1em;
+  opacity: 25%;
+}
+
+.footer-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 16em;
+  opacity: 60%;
+}
+
+.footer-img:hover {
+  filter: invert(100%);
 }

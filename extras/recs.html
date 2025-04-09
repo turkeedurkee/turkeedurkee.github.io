@@ -42,7 +42,7 @@
     <div class="stripe-container R-focus" id="container">
 
         <!-- E (WEBSURF) -->
-        <span class="stripe unlocked side" id="E"  onclick="clickE('./websurf.html')">
+        <span class="stripe unlocked side" id="E"  onclick="clickE('./websurf')">
             <h2 class="Etext invis center" style="top: 50%;">
                 BSURF
             </h2>
@@ -53,14 +53,14 @@
         </span>
 
         <!-- X (SOAPBOX) -->
-        <span class="stripe unlocked side" id="X" onclick="clickX('./blog.html')">
+        <span class="stripe unlocked side" id="X" onclick="clickX('./blog')">
             <h2 class="Xtext invis" style="top: 50%; transform: translateY(-100%);">
                 SOAPBOX
             </h2>
         </span>
 
         <!-- T (GUESTBOOK) -->
-        <span class="stripe unlocked side" id="T" onclick="clickT('./guestbook.html')">
+        <span class="stripe unlocked side" id="T" onclick="clickT('./guestbook')">
             <h2 class="Ttext invis center" style="top: 50%;">
                 BOOK
             </h2>
@@ -85,6 +85,7 @@
                     <h4>games</h4>
 
                     <table style="margin: auto;">
+
                         <tr>
 
                             <!-- FLOATING POINT -->
@@ -172,9 +173,31 @@
 
                         </tr>
                     </table>
+
+                    <br>
                     
+                    <!-- FOOTER -->
+                    <hr class="footer-line">
                     <footer>
-                        <p style="opacity: 50%; margin-bottom: 0;">Home | Sitemap</p>
+                        <table class="footer-table">
+                            <tr>
+                                <td>
+                                    <p>
+                                        <span class="footer-link" onclick="collapse('../extras')">collapse</span> //
+                                    </p>
+                                </td>
+                                <td>
+                                    <a href="../">
+                                        <img class="footer-img" src="../img/turkee-footer.png" onmouseover="this.src='../img/durkee-footer.png';" onmouseout="this.src='../img/turkee-footer.png';" alt="Home">
+                                    </a>
+                                </td>
+                                <td>
+                                    <p>
+                                        // <a class="footer-link" href="../sitemap">sitemap</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
                     </footer>
 
                 </div>
@@ -182,7 +205,7 @@
         </span>
 
         <!-- A (ARCHIVE) -->
-        <span class="stripe unlocked side" id="A" onclick="clickA('./archive.html')">
+        <span class="stripe unlocked side" id="A" onclick="clickA('./archive')">
             <h2 class="Atext invis center" style="top: 50%;">
                 RCHIVE
             </h2>
@@ -193,7 +216,7 @@
         </span>
 
         <!-- S (STUFF) -->
-        <span class="stripe unlocked side" id="S" onclick="clickS('./stuff.html')">
+        <span class="stripe unlocked side" id="S" onclick="clickS('./stuff')">
             <h2 class="Stext invis center" style="top: 50%;">
                 TUFF
             </h2>
