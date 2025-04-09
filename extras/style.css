@@ -501,6 +501,7 @@ span .footer-link:hover {
   overflow: visible;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.5em;
   width: 32em;
   color: black;
   border: 0.1em dashed #331c1d;
@@ -511,7 +512,7 @@ span .footer-link:hover {
 .footer-img {
   margin-left: auto;
   margin-right: auto;
-  width: 16em;
+  width: 14em;
   opacity: 60%;
 }
 
