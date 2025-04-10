@@ -519,3 +519,19 @@ span .footer-link:hover {
 .footer-img:hover {
   filter: invert(100%);
 }
+
+.archive-caption {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.archive-link {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
