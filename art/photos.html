@@ -51,8 +51,25 @@
 
 
 <body>
-  
-  
+
+<div class="popup-bg" onclick="Vanish()"></div>
+
+
+<!-- IMAGE POPUPS -->
+<div id="floatingPoint" class="popup window active glass color"><div class="title-bar">
+  <div class="title-bar-text">turkeedurk.ee/art/<b>photos</b></div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <p>Floating Point is a little free game about momentum and flow. Since 2014, I've been visiting this game to help me relax on nights I couldn't sleep. It's peaceful, the music is hypnotic, and there's a grappling hook. The gameplay is simple: touch all the bars on the level. The faster you move, the more points the bars give and the taller they grow (making them easier to hit).</p>
+    <p>Made by Tom Francis - the indie creator of Gunpoint, Heat Signature, and Tactical Breach Wizards. It's a good time! And free, so you have nothing to lose.</p>
+  </div>
+</div>
+
+
+ <!--BEGIN CONTENT  -->
 <p style="padding:3px"></p>
 
 <div class="window active glass color" style="max-width: 700px; margin: auto">
@@ -172,25 +189,28 @@
       <img src="../img/frutiger-photos.png">
     </a>
 
-    <!--CONSTRUCTION-->
+    <!--2025 PICS-->
     <div class="background">
       <div class="window active color" style="max-width: 700px">
         <div class="title-bar">
-          <div class="title-bar-text">Oops!</div>
+          <div class="title-bar-text">2025</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Close"></button>
           </div>
         </div>
         <div class="window-body has-space">
-          <p style="padding:10px"></p>
-          <div style="text-align: center;">
-            <img style="width:150px" src="../img/construction_pika.gif">
-            <br>
-            <p>
-              Oops, this page is still under construction!
-            </p>
-          </div>
+          <!-- <p style="padding:10px"></p> -->
+
+          <!-- HORIZONTALS -->
+          <img class="photo" src="https://live.staticflickr.com/65535/54447766504_97e9523d9a_c.jpg" width="800" height="450" onclick="Popup('#floatingPoint')">
+          <p style="margin:6px;"></p>
+          
+          <img class="photo" img src="https://live.staticflickr.com/65535/54447825218_557f3f8128_c.jpg" onclick="Popup('#floatingPoint')">
+
+
+          <!-- VERTICALS -->
+          
           <br>
         </div>
       </div>
@@ -205,12 +225,12 @@
     </table>
 
     <div style="text-align: center">
-      <!-- POP-UP PROMPT -->
+      <!-- AD POP-UP PROMPT -->
       <a href="#dialog-demo" style="text-align: center;">
         <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
       </a>
 
-      <!-- POP-UP -->
+      <!-- AD POP-UP -->
       <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
         <div class="title-bar">
           <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
@@ -264,12 +284,12 @@
     </table>
 
     <div style="text-align: center">
-      <!-- POP-UP PROMPT -->
+      <!-- AD POP-UP PROMPT -->
       <a href="#dialog-demo" style="text-align: center;">
         <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
       </a>
 
-      <!-- POP-UP -->
+      <!-- AD POP-UP -->
       <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
         <div class="title-bar">
           <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
@@ -379,5 +399,9 @@ function dragElement(elmnt) {
   }
 }
 </script>  
+
+<script src="../js/jquery-3.7.1.min.js"></script>
+
+<script src="./js/art.js"></script>
 
 </body></html>

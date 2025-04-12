@@ -410,6 +410,8 @@ h2 span {
   /* transform: translateY(100px;) */
 }
 
+/* POPUP FUNCTIONALITY */
+
 .popup {
   position: fixed;
   background-color: #331c1d;
@@ -441,6 +443,7 @@ h2 span {
 
 .popup p {
   color: #e7dac5;
+  text-align: left;
 }
 
 .X {
@@ -460,10 +463,6 @@ h2 span {
 
 .popup h4 {
   color:#e7dac5;
-}
-
-.popup p{
-  text-align: left;
 }
 
 .archive-block {
