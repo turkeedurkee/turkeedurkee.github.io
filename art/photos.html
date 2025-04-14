@@ -52,21 +52,7 @@
 
 <body>
 
-<div class="popup-bg" onclick="Vanish()"></div>
-
-
-<!-- IMAGE POPUPS -->
-<div id="floatingPoint" class="popup window active glass color"><div class="title-bar">
-  <div class="title-bar-text">turkeedurk.ee/art/<b>photos</b></div>
-    <div class="title-bar-controls">
-      <button aria-label="Close" onclick="Vanish()"></button>
-    </div>
-  </div>
-  <div class="window-body" style="text-align: center;">
-    <p>Floating Point is a little free game about momentum and flow. Since 2014, I've been visiting this game to help me relax on nights I couldn't sleep. It's peaceful, the music is hypnotic, and there's a grappling hook. The gameplay is simple: touch all the bars on the level. The faster you move, the more points the bars give and the taller they grow (making them easier to hit).</p>
-    <p>Made by Tom Francis - the indie creator of Gunpoint, Heat Signature, and Tactical Breach Wizards. It's a good time! And free, so you have nothing to lose.</p>
-  </div>
-</div>
+  <div class="popup-bg" onclick="Vanish()"></div>
 
 
  <!--BEGIN CONTENT  -->
@@ -202,16 +188,22 @@
         <div class="window-body has-space">
           <!-- <p style="padding:10px"></p> -->
 
-          <!-- HORIZONTALS -->
-          <img class="photo" src="https://live.staticflickr.com/65535/54447766504_97e9523d9a_c.jpg" width="800" height="450" onclick="Popup('#floatingPoint')">
-          <p style="margin:6px;"></p>
+          <!-- 2025 HORIZONTALS -->
+          <img class="photo" src="https://live.staticflickr.com/65535/54447766504_97e9523d9a_c.jpg" width="800" height="450" onclick="Popup('#earth')">
           
-          <img class="photo" img src="https://live.staticflickr.com/65535/54447825218_557f3f8128_c.jpg" onclick="Popup('#floatingPoint')">
+          <img class="photo" src="https://live.staticflickr.com/65535/54447825218_557f3f8128_c.jpg" onclick="Popup('#PhiPhi')">
 
 
-          <!-- VERTICALS -->
+          <!-- 2025 VERTICALS -->
+          <table width="100%; margin: 0;">
+            <td style="width: 50%; margin: auto; padding: 0; text-align: center;">
+              <img class="photo" src="https://live.staticflickr.com/65535/54446719492_0cacb60042_z.jpg" onclick="Popup('#houseSculpture')">
+            </td>
+            <td style="width: 50%; margin: auto; padding: 0; text-align: center;">
+              <p style="margin: auto; text-align: center;">testing123</p>
+            </td>
+          </table>
           
-          <br>
         </div>
       </div>
     </div>
@@ -352,6 +344,51 @@
 <a href="../">
   <img id="start" src="../img/start-off.png" onmouseover="this.src='../img/start-on.png';" onmouseout="this.src='../img/start-off.png';" />
 </a>
+
+
+
+
+
+<!-- IMAGE POPUPS -->
+
+<!-- 2025 -->
+<div id="earth" class="popup window active glass color" style="width: 1000px;"><div class="title-bar">
+  <div class="title-bar-text">Earth</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54447766504_398412ee14_o.jpg">
+    <p>Taken with SCALPSS camera on board the Blue Ghost 1 lunar lander.</p>
+  </div>
+</div>
+
+<div id="PhiPhi" class="popup window active glass color" style="width: 1200px;"><div class="title-bar">
+  <div class="title-bar-text">Phi Phi Island, Thailand</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54447825218_96d99c8dd9_o.jpg">
+    <p>Taken with Samsung Galaxy S20+ camera.</p>
+  </div>
+</div>
+
+<div id="houseSculpture" class="popup window active glass color" style="width: 500px;"><div class="title-bar">
+  <div class="title-bar-text">Cedar Park, Texas</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54446719492_226fee6b3c_o.jpg">
+    <p>Taken with Unihertz Atom camera.</p>
+  </div>
+</div>
+
+
 
 
 <script type="text/javascript">

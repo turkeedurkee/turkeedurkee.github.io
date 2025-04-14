@@ -53,10 +53,11 @@ nav{
   width: 8000px;
   transition: 0.3s;
   cursor: pointer;
+  margin-bottom: 6px;
 }
 
 .photo:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 	filter: brightness(110%) blur(0.1px);
 }
 
@@ -90,8 +91,5 @@ nav{
 
 .popup p {
   text-align: center;
-}
-
-.popup h4 {
-  color:#e7dac5;
+  margin: 6px;
 }
