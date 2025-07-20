@@ -51,8 +51,11 @@
 
 
 <body>
-  
-  
+
+  <div class="popup-bg" onclick="Vanish()"></div>
+
+
+ <!--BEGIN CONTENT  -->
 <p style="padding:3px"></p>
 
 <div class="window active glass color" style="max-width: 700px; margin: auto">
@@ -172,26 +175,35 @@
       <img src="../img/frutiger-photos.png">
     </a>
 
-    <!--CONSTRUCTION-->
+    <!--2025 PICS-->
     <div class="background">
       <div class="window active color" style="max-width: 700px">
         <div class="title-bar">
-          <div class="title-bar-text">Oops!</div>
+          <div class="title-bar-text">2025</div>
           <div class="title-bar-controls">
             <button aria-label="Minimize"></button>
             <button aria-label="Close"></button>
           </div>
         </div>
         <div class="window-body has-space">
-          <p style="padding:10px"></p>
-          <div style="text-align: center;">
-            <img style="width:150px" src="../img/construction_pika.gif">
-            <br>
-            <p>
-              Oops, this page is still under construction!
-            </p>
-          </div>
-          <br>
+          <!-- <p style="padding:10px"></p> -->
+
+          <!-- 2025 HORIZONTALS -->
+          <img class="photo" src="https://live.staticflickr.com/65535/54447766504_97e9523d9a_c.jpg" width="800" height="450" onclick="Popup('#earth')">
+          
+          <img class="photo" src="https://live.staticflickr.com/65535/54447825218_557f3f8128_c.jpg" onclick="Popup('#PhiPhi')">
+
+
+          <!-- 2025 VERTICALS -->
+          <table width="100%; margin: 0;">
+            <td style="width: 50%; margin: auto; padding: 0; text-align: center;">
+              <img class="photo" src="https://live.staticflickr.com/65535/54446719492_0cacb60042_z.jpg" onclick="Popup('#houseSculpture')">
+            </td>
+            <td style="width: 50%; margin: auto; padding: 0; text-align: center;">
+              <p style="margin: auto; text-align: center;">testing123</p>
+            </td>
+          </table>
+          
         </div>
       </div>
     </div>
@@ -205,12 +217,12 @@
     </table>
 
     <div style="text-align: center">
-      <!-- POP-UP PROMPT -->
+      <!-- AD POP-UP PROMPT -->
       <a href="#dialog-demo" style="text-align: center;">
         <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
       </a>
 
-      <!-- POP-UP -->
+      <!-- AD POP-UP -->
       <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
         <div class="title-bar">
           <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
@@ -264,12 +276,12 @@
     </table>
 
     <div style="text-align: center">
-      <!-- POP-UP PROMPT -->
+      <!-- AD POP-UP PROMPT -->
       <a href="#dialog-demo" style="text-align: center;">
         <img src="../img/icons/info.ico" style="max-width: 18px; margin-bottom: 2px;"> Why am I seeing these ads?
       </a>
 
-      <!-- POP-UP -->
+      <!-- AD POP-UP -->
       <div class="window active color glass" id="dialog-demo" role="dialog" aria-labelledby="dialog-title" style="width: 452px; text-align: left;">
         <div class="title-bar">
           <div class="title-bar-text" id="dialog-title">Why am I seeing these ads?</div>
@@ -334,6 +346,51 @@
 </a>
 
 
+
+
+
+<!-- IMAGE POPUPS -->
+
+<!-- 2025 -->
+<div id="earth" class="popup window active glass color" style="width: 1000px;"><div class="title-bar">
+  <div class="title-bar-text">Earth</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54447766504_398412ee14_o.jpg">
+    <p>Taken with SCALPSS camera on board the Blue Ghost 1 lunar lander.</p>
+  </div>
+</div>
+
+<div id="PhiPhi" class="popup window active glass color" style="width: 1200px;"><div class="title-bar">
+  <div class="title-bar-text">Phi Phi Island, Thailand</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54447825218_96d99c8dd9_o.jpg">
+    <p>Taken with Samsung Galaxy S20+ camera.</p>
+  </div>
+</div>
+
+<div id="houseSculpture" class="popup window active glass color" style="width: 500px;"><div class="title-bar">
+  <div class="title-bar-text">Cedar Park, Texas</div>
+    <div class="title-bar-controls">
+      <button aria-label="Close" onclick="Vanish()"></button>
+    </div>
+  </div>
+  <div class="window-body" style="text-align: center;">
+    <img src="https://live.staticflickr.com/65535/54446719492_226fee6b3c_o.jpg">
+    <p>Taken with Unihertz Atom camera.</p>
+  </div>
+</div>
+
+
+
+
 <script type="text/javascript">
   // Make the DIV element draggable:
 dragElement(document.getElementById("mydiv"));
@@ -379,5 +436,9 @@ function dragElement(elmnt) {
   }
 }
 </script>  
+
+<script src="../js/jquery-3.7.1.min.js"></script>
+
+<script src="./js/art.js"></script>
 
 </body></html>

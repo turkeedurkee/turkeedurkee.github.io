@@ -127,13 +127,31 @@ function clickS(href) {
   }, 1000);
 }
 
+//COLLAPSE BACK TO EXTRAS MENU
+function collapse(href) {
+  //Stripe & Text Formatting
+  $("#container, #E, #X, #T, #R, #A, #S").removeClass("unlocked"); //Locks stripes until next page loads
+  $("#container").removeClass("E-focus"); //Removes any page position classes
+  $("#container").removeClass("X-focus"); //Removes any page position classes
+  $("#container").removeClass("T-focus"); //Removes any page position classes
+  $("#container").removeClass("R-focus"); //Removes any page position classes
+  $("#container").removeClass("A-focus"); //Removes any page position classes
+  $("#container").removeClass("S-focus"); //Removes any page position classes
+  // $("#container").addClass("reset"); //Resets main stripe container to smaller width
+  $("h1, h2, .mainpage").addClass("invis"); //Makes text invis mode
+  $("#E, #X, #T, #R, #A, #S").removeClass("main"); //Makes other stripes smaller for sides
+  $("#E, #X, #T, #R, #A, #S").removeClass("side"); //Resetting every stripe to standard width
+  // Link to Page
+  setTimeout(function () {
+    window.location.href = href;
+  }, 1000);
+}
 
 //RECS POPUP
 function recsPopup(id) {
   $(".popup-bg").addClass("front"); //Make the bg appear
   $(id).addClass("front"); //Make the inputted review pop up
 }
-
 
 //RECS DISAPPEAR
 function recsVanish() {

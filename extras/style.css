@@ -137,6 +137,20 @@ h2 span {
   transition: 0.8s ease-out;
 }
 
+/* CLONE OF STRIPE CONTAINER FOR JAVASCRIPT "COLLAPSE" FUNCTION TO RESET */
+.reset {
+  position: relative;
+  top: 0;
+  left: 35%;
+  height: 100vh;
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  transition: 0.8s ease-out;
+}
+
 .stripe-container.unlocked:hover {
   left: 33.5%;
   width: 33%;
@@ -202,7 +216,7 @@ h2 span {
 
 .content {
   margin: auto;
-  padding: 3% 5% 5% 5%;
+  padding: 3% 5% 1% 5%;
 }
 
 .content p {
@@ -396,6 +410,8 @@ h2 span {
   /* transform: translateY(100px;) */
 }
 
+/* POPUP FUNCTIONALITY */
+
 .popup {
   position: fixed;
   background-color: #331c1d;
@@ -427,6 +443,7 @@ h2 span {
 
 .popup p {
   color: #e7dac5;
+  text-align: left;
 }
 
 .X {
@@ -448,10 +465,6 @@ h2 span {
   color:#e7dac5;
 }
 
-.popup p{
-  text-align: left;
-}
-
 .archive-block {
   background-color: #eb682e;
   width: 95%;
@@ -459,4 +472,65 @@ h2 span {
   margin: 1.5em auto;
   text-align: left;
   padding: 0.5em 2em;
+}
+
+footer p {
+  text-align: center;
+  opacity: 60%;
+}
+
+.footer-link {
+  color: black;
+}
+
+.footer-link:hover {
+  filter: invert(100%);
+}
+
+span .footer-link:hover {
+  cursor: pointer;
+}
+
+.footer-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-line {
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  width: 32em;
+  color: black;
+  border: 0.1em dashed #331c1d;
+  border-radius: 0.1em;
+  opacity: 25%;
+}
+
+.footer-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 14em;
+  opacity: 60%;
+}
+
+.footer-img:hover {
+  filter: invert(100%);
+}
+
+.archive-caption {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.archive-link {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
