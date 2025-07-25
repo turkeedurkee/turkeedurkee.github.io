@@ -12,6 +12,7 @@ body {
     /* background-color: #e7dac5; */
     /* background-color: #282524; */
     background: linear-gradient(90deg, #e7dac5 50%, #331c1d 50%);
+    
     font-family: 'Segoe UI', SegoeUI, 'Noto Sans', sans-serif;
     font-size: 12px;
     margin: 0;
@@ -259,6 +260,7 @@ h2 span {
 
 #E {
   background-color: #f1d736;
+  
   /* opacity: 50%; */
 }
 
