@@ -35,7 +35,7 @@ body {
   background-image: var(--banner);
   background-size: contain;
   background-position: center;
-  height: 150px;
+  height: 148px;
   margin-top: var(--content-spacing);
   margin-bottom: var(--content-spacing);
   border: var(--border);
@@ -83,10 +83,10 @@ aside {
   font-size: 20px;
 }
 
-#about.title, 
+/* #about.title, 
 #about.sidebar-title {
   background-image: url("./img/banners/about-bar.png");
-}
+} */
 
 main {
   width: 74%;
@@ -116,7 +116,7 @@ footer {
   text-align: center;
 }
 
-#about footer {
+#about {
   background-image: url("./img/banners/about-bar.png");
 }
 
