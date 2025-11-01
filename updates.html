@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commit History for turkeedurkee.github.io</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { font-size: 1.5em; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+    .sha { font-family: monospace; color: #555; }
+    .message { font-weight: bold; }
+    .date { color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>Commits for <code>turkeedurkee/turkeedurkee.github.io</code></h1>
+  <div id="commits">Loading…</div>
+
+  <script>
+    const owner = 'turkeedurkee';
+    const repo = 'turkeedurkee.github.io';
+    const perPage = 50;  // number of commits per API page
+    const commitsContainer = document.getElementById('commits');
+
+    // optionally set your GitHub token if you have one
+    const GITHUB_TOKEN = '';  // <-- set if you want higher rate limits
+
+    async function fetchCommits(page = 1) {
+      const url = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=${perPage}&page=${page}`;
+      const headers = {
+        'Accept': 'application/vnd.github+json'
+      };
+      if (GITHUB_TOKEN) {
+        headers['Authorization'] = `Bearer ${GITHUB_TOKEN}`;
+      }
+      const resp = await fetch(url, { headers });
+      if (!resp.ok) {
+        throw new Error(`GitHub API error: ${resp.status} ${resp.statusText}`);
+      }
+      const data = await resp.json();
+      return data;
+    }
+
+    async function loadAllCommits() {
+      let page = 1;
+      let allCommits = [];
+      while (true) {
+        commitsContainer.textContent = `Loading page ${page}…`;
+        const commits = await fetchCommits(page);
+        if (commits.length === 0) {
+          break;
+        }
+        allCommits = allCommits.concat(commits);
+        // GitHub returns up to per_page items; if less than that, we are done
+        if (commits.length < perPage) {
+          break;
+        }
+        page++;
+      }
+      renderCommits(allCommits);
+    }
+
+    function renderCommits(commits) {
+      if (commits.length === 0) {
+        commitsContainer.textContent = 'No commits found.';
+        return;
+      }
+      const ul = document.createElement('ul');
+      for (const c of commits) {
+        const li = document.createElement('li');
+        const sha = document.createElement('div');
+        sha.className = 'sha';
+        sha.textContent = c.sha;
+
+        const msg = document.createElement('div');
+        msg.className = 'message';
+        msg.textContent = c.commit.message;
+
+        const info = document.createElement('div');
+        info.className = 'date';
+        info.textContent = `Author: ${c.commit.author.name} — Date: ${new Date(c.commit.author.date).toLocaleString()}`;
+
+        // link to GitHub commit page
+        const link = document.createElement('a');
+        link.href = c.html_url;
+        link.target = '_blank';
+        link.textContent = 'View on GitHub';
+
+        li.appendChild(sha);
+        li.appendChild(msg);
+        li.appendChild(info);
+        li.appendChild(link);
+        ul.appendChild(li);
+      }
+      commitsContainer.innerHTML = '';
+      commitsContainer.appendChild(ul);
+    }
+
+    loadAllCommits().catch(err => {
+      commitsContainer.textContent = `Error: ${err.message}`;
+      console.error(err);
+    });
+  </script>
+</body>
+</html>

@@ -45,6 +45,10 @@ body {
   background-image: url("./img/banners/about-banner.png")
 }
 
+#obra.topbar {
+  background-image: url("./img/banners/obradinn-banner.png")
+}
+
 #container,
 .topbar img {
   max-width: 850px;
@@ -110,14 +114,19 @@ nav ul li a {
 
 footer {
   border: var(--border);
-  height: 25px;
+  height: 24px;
   margin-top: var(--content-spacing);
+  /* margin-bottom: var(--content-spacing); */
   background-image: var(--titleBars);
   text-align: center;
 }
 
 #about {
   background-image: url("./img/banners/about-bar.png");
+}
+
+#obra {
+  background-image: url("./img/banners/obra-bar.png");
 }
 
 /* button styles */
@@ -128,7 +137,7 @@ button {
   margin-bottom: 10px;
 }
 th {
-  color: var(--accent-2);
+  color: #bfaa86;
 }
 #linkNum {
   color: var(--accent-2);
