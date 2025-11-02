@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Commit History for turkeedurkee.github.io</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { font-size: 1.5em; }
-    ul { list-style: none; padding: 0; }
-    li { margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
-    .sha { font-family: monospace; color: #555; }
-    .message { font-weight: bold; }
-    .date { color: #888; font-size: 0.9em; }
-  </style>
-</head>
-<body>
-  <h1>Commits for <code>turkeedurkee/turkeedurkee.github.io</code></h1>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Updates | TurkeeDurkee</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./about-style.css"/>
+        <script src="../assets/scripts/load.js"></script>
+        <link rel="icon" href="./img/icons/favicon.ico" type="image/gif"/>
+
+        <style>
+            body {
+                /* Water Refraction Gif */
+                background-image: url("./img/backgrounds/twinkle-bg.gif");
+                background-repeat: repeat;
+                background-size: 250px;;
+            }
+
+            
+            .update {
+                border: 2px dashed #6c4c6c;
+                padding: 5px;
+            }
+            main {
+                background-color: transparent !important;
+            }
+            .content {
+                background-color: var(--background);
+            }
+            .title {
+                margin-top: var(--content-spacing);
+            }
+            .title:first-child {
+                margin-top: 0 !important;
+            }
+            .myButton {
+                display:flex;
+                margin:0 auto;
+                width:88px;
+            }
+            .yw-content {
+                text-align: center;
+            }
+            
+        </style>
+
+            
+
+    </head>
+
+    <body>
+
+
+    <div id="container">
+        <div class="topbar"></div>
+        <div id="flex">
+            <main>
+                <div class="title">&nbsp;To-Do</div>
+                <div class="content">
+                    <p>To be added:</p>
+                        <ul>
+                            <li>Vinyl collection on Stuff page</li>
+                            <li>More photography</li>
+                            <li>
+                                Webring with a subway map interface
+                                <ul><li>If/when friends make their own sites</li></ul>
+                            </li>
+                            <li>Make the Extras sub-pages not squeeze their contents when shrunk</li>
+                        </ul>
+                </div>
+
+
+                <div class="title">&nbsp;Updates</div>
+                <div class="content">
+                    <!-- GitHub commits -->
+                <p>Commits for <a href="https://github.com/turkeedurkee/turkeedurkee.github.io" target="_blank">turkeedurkee.github.io</a></p>
+  
+  
   <div id="commits">Loading…</div>
 
   <script>
@@ -62,17 +122,57 @@
       renderCommits(allCommits);
     }
 
-    function renderCommits(commits) {
+    // function renderCommits(commits) {
+    //   if (commits.length === 0) {
+    //     commitsContainer.textContent = 'No commits found.';
+    //     return;
+    //   }
+    //   const ul = document.createElement('ul');
+    //   for (const c of commits) {
+    //     const li = document.createElement('li');
+    //     const sha = document.createElement('div');
+    //     sha.className = 'sha';
+    //     sha.textContent = c.sha;
+
+    //     const msg = document.createElement('div');
+    //     msg.className = 'message';
+    //     msg.textContent = c.commit.message;
+
+    //     const info = document.createElement('div');
+    //     info.className = 'date';
+    //     info.textContent = `Author: ${c.commit.author.name} — Date: ${new Date(c.commit.author.date).toLocaleString()}`;
+
+    //     // link to GitHub commit page
+    //     const link = document.createElement('a');
+    //     link.href = c.html_url;
+    //     link.target = '_blank';
+    //     link.textContent = 'View on GitHub';
+
+    //     li.appendChild(sha);
+    //     li.appendChild(msg);
+    //     li.appendChild(info);
+    //     li.appendChild(link);
+    //     ul.appendChild(li);
+    //   }
+    //   commitsContainer.innerHTML = '';
+    //   commitsContainer.appendChild(ul);
+    // }
+
+        function renderCommits(commits) {
       if (commits.length === 0) {
         commitsContainer.textContent = 'No commits found.';
         return;
       }
-      const ul = document.createElement('ul');
+      const div = document.createElement('div');
+      
       for (const c of commits) {
-        const li = document.createElement('li');
-        const sha = document.createElement('div');
-        sha.className = 'sha';
-        sha.textContent = c.sha;
+        const p = document.createElement('p');
+        p.className = 'update';
+
+        // const li = document.createElement('li');
+        // const sha = document.createElement('div');
+        // sha.className = 'sha';
+        // sha.textContent = c.sha;
 
         const msg = document.createElement('div');
         msg.className = 'message';
@@ -80,7 +180,8 @@
 
         const info = document.createElement('div');
         info.className = 'date';
-        info.textContent = `Author: ${c.commit.author.name} — Date: ${new Date(c.commit.author.date).toLocaleString()}`;
+        // info.textContent = `Author: ${c.commit.author.name} — Date: ${new Date(c.commit.author.date).toLocaleString()}`;
+        info.textContent = `${new Date(c.commit.author.date).toLocaleString()}`;
 
         // link to GitHub commit page
         const link = document.createElement('a');
@@ -88,14 +189,22 @@
         link.target = '_blank';
         link.textContent = 'View on GitHub';
 
-        li.appendChild(sha);
-        li.appendChild(msg);
-        li.appendChild(info);
-        li.appendChild(link);
-        ul.appendChild(li);
+        const spacer1 = document.createElement('div');
+        spacer1.textContent = '\\';
+
+        const spacer2 = document.createElement('div');
+        spacer2.textContent = '/';
+
+        // p.appendChild(sha);
+        p.appendChild(info);
+        p.appendChild(spacer1);
+        p.appendChild(msg);
+        p.appendChild(spacer2);
+        p.appendChild(link);
+        div.appendChild(p);
       }
       commitsContainer.innerHTML = '';
-      commitsContainer.appendChild(ul);
+      commitsContainer.appendChild(div);
     }
 
     loadAllCommits().catch(err => {
@@ -103,5 +212,149 @@
       console.error(err);
     });
   </script>
+
+<p class="update">
+    July, 2024
+    <br>
+    \
+    <br>
+    The scope of the overhaul ballooned. I lost my job as part of a mass layoff, so I once again wanted to use turkeedurk.ee as a vehicle for my engineering qualifications. The vision for the final website became a nexus that would contain both professional and personal info, compartmentalized but coexistent. Finishing the overhaul would end up taking another year and a half >.<
+</p>
+
+<p class="update">
+    February, 2024
+    <br>
+    \
+    <br>
+    The beginning of the v1.0 overhaul. Around this time I had become disillusioned with the current state of the internet and began falling in love with neocities pages. I decided to overhaul turkeedurk.ee into an aesthetically haphazard collection of my personal projects, thoughts, and various things I like!
+</p>
+
+
+<p class="update">
+    Fall, 2020
+    <br>
+    \
+    <br>
+    The original turkeedurk.ee (call it v0?) was built. It was a bare-bones, 2-page website made with the express purpose of helping me land a job after graduation.
+</p>
+
+                </div>
+                </main>
+
+
+                
+
+  <aside>
+                    <div class="sidebar-title">&nbsp;Navigation</div>
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="./">Home</a>
+                            </li>
+                            <li>
+                                <a href="./art/videos">Gallery</a>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="./art/videos">Videos</a>
+                                </li>
+                                <li>
+                                    <a href="./art/music">Music</a>
+                                </li>
+                                <li>
+                                    <a href="./art/photos">Photos</a>
+                                </li>
+                                <li>
+                                    <a href="./art/recipes">Recipes</a>
+                                </li>
+                            </ul>
+                            <li>
+                                <a href="./eng/experience">Engineering</a>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="./eng/experience">Experience</a>
+                                </li>
+                                <li>
+                                    <a href="./eng/projects">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="./eng/education">Education</a>
+                                </li>
+                                <li>
+                                    <a href="./eng/resume">Résumé</a>
+                                </li>
+                            </ul>
+                            <li>
+                                <a href="./extras">Extras</a>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="./extras/websurf">Websurf</a>
+                                </li>
+                                <li>
+                                    <a href="./extras/blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="./extras/guestbook">Guestbook</a>
+                                </li>
+                                <li>
+                                    <a href="./extras/recs">Recommendations</a>
+                                </li>
+                                <li>
+                                    <a href="./extras/archive">Archive</a>
+                                </li>
+                                <li>
+                                    <a href="./extras/stuff">Stuff</a>
+                                </li>
+                            </ul>
+                            <li>
+                                <a href="./about">About</a>
+                            </li>
+                            <ul>
+                                <li>
+                                    <a href="./updates">Updates</a>
+                                </li>
+                                <li>
+                                    <a href="./credits">Credits</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:turkeedurkee@gmail.com">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="./sitemap">Sitemap</a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <p style="padding-bottom:4px; margin: 0px;"></p>
+                    </nav>
+                </aside>
+            </div>
+            <marquee style="height:45px; padding:5px 0 5px 0; margin-top:5px; margin-bottom:-4px; background-color: var(--background);" scrollamount="4" loop="infinite" onmouseover="this.stop();" onmouseout="this.start();">
+                                <img style="height:45px;" src="./img/buttons/old-web.png">
+                                <img style="height:45px;" src="./img/buttons/hypnos.gif">
+                                <img style="height:45px;" src="./img/buttons/record.gif">
+                                <img style="height:45px;" src="./img/buttons/our-seas.gif">
+                                <img style="height:45px;" src="./img/buttons/ac-addict.png">
+                                <img style="height:45px;" src="./img/buttons/wiggly.gif">
+                                <img style="height:45px;" src="./img/buttons/3ds.gif">
+                                <img style="height:45px;" src="./img/buttons/wii-owner.png">
+                                <img style="height:45px;" src="./img/buttons/n64.gif">
+                                <img style="height:45px;" src="./img/buttons/old-net.gif">
+                                <img style="height:45px;" src="./img/buttons/stargazer.gif">
+                                <img style="height:45px;" src="./img/buttons/yoshis.gif">
+                                <img style="height:45px;" src="./img/buttons/da-blinkie.gif">
+                                <a rel="nofollow" target="_blank" href="https://tane.us/">
+                                    <img style="height:45px;" src="./img/buttons/tech-tips.gif">
+                                </a>
+                            </marquee>
+            <footer></footer>
+        </div>
+    </body>
+
+  
 </body>
+</html>
+    
+
 </html>
