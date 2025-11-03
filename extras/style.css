@@ -215,6 +215,10 @@ h2 span {
   opacity: 0%;
 }
 
+.cursor {
+  cursor: default;
+}
+
 .content {
   margin: auto;
   padding: 3% 5% 1% 5%;
