@@ -17,7 +17,6 @@
   --text-color: white;
   --link-color: var(--accent-1);
   --border: 1px solid black;
-  --arrows: url("./assets/images/arrow.png");
 }
 
 html,
